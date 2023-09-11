@@ -1,0 +1,103 @@
+.footer {
+  background-color: var(--excel-light-green);
+  padding: 2rem 4rem;
+}
+
+.boxes {
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 1rem;
+}
+
+.container h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: "Pou";
+  letter-spacing: .7px;
+  color: var(--excel-dark-green);
+  user-select: none;
+  padding-bottom: 12px;
+}
+
+.mail,
+.location {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 17px;
+}
+
+.location p {
+  color: #fff;
+  margin-left: 32px;
+}
+
+.pin-container {
+  display: block;
+  width: 32px;
+}
+
+.pin-container svg {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-70%);
+  transform: translateY(-70%);
+}
+
+.mail svg {
+  transform: translateY(7px);
+  margin-right: 5px;
+}
+
+.mail a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.link {
+  color: #fff;
+  padding-bottom: 3px;
+  font-size: 20px;
+  width: fit-content;
+  letter-spacing: 0.5px;
+}
+
+.link svg {
+  transform: translateY(3px);
+}
+
+.copyright {
+  position: relative;
+  padding-top: 10px;
+}
+
+.copyright hr {
+  height: 0px;
+  background-color: var(--white-text);
+  border: 1px solid var(--white-text);
+}
+
+.copyright p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.copyright svg {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    background-color: var(--excel-light-green);
+    padding: 0 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .container {
+    padding-bottom: 1rem;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 0rem;
+  }
+}

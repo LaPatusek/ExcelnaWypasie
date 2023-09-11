@@ -1,5 +1,14 @@
 @import './css-reset.css';
 
+:root {
+  --excel-green: #1b7444;
+  --excel-dark-green: #1b512d;
+  --excel-light-green: #21a366;
+
+  --main-brown: #6d523c;
+  --white-text: #ded6c9;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,11 +16,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #a37a5c;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Pou';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Components/Assets/Pou.ttf) format('truetype');
+  font-display: swap;
 }
 
 .grid {

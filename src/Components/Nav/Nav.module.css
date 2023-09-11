@@ -1,0 +1,78 @@
+.nav {
+  background-color: var(--excel-light-green);
+  padding: 2rem 3rem;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.logo {
+  align-self: center;
+}
+
+.logo a {
+  color: #fff;
+  font-family: 'Pou';
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.navbar {
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  align-content: center;
+  column-gap: 50px;
+}
+
+.link {
+  color: var(--white-text);
+  font-size: 28px;
+  letter-spacing: 0.7px;
+  transition: all 0.4s;
+  font-family: 'Pou';
+}
+
+.link:hover {
+  color: white;
+}
+
+.button-stacjonarne {
+  text-align: center;
+  justify-self: right;
+  align-self: center;
+  background-color: var(--main-brown);
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.button-stacjonarne:hover {
+  background-color: var(--white-text);
+  border: 2px solid var(--main-brown);
+}
+
+.button-stacjonarne a {
+  color: var(--white-text);
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  transition: all 0.6s;
+}
+
+.button-stacjonarne:hover a {
+  color: var(--main-brown);
+}
+
+.nav-800 {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    display: none !important;
+  }
+
+  .nav-800 {
+    display: block;
+  }
+}

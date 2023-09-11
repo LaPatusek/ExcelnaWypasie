@@ -1,0 +1,11 @@
+.flipped-wave {
+    transform: rotate(180deg) translateY(-2rem) rotateY(180deg);
+}
+
+.oferta {
+    padding: 4rem;
+}
+
+.right-section {
+    grid-template-columns: repeat(2, 1fr);
+}
