@@ -1,5 +1,7 @@
+import { Crown1, Profile, VideoHorizontal } from 'iconsax-react';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import instruktor from '../Components/Assets/Eryk.jpg';
 import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
 
@@ -8,15 +10,70 @@ export default function Main() {
     <Fragment>
       <Header />
       <section className={styles.main}>
-        <div className={styles.oferta}>
+        <div className={`${styles.oferta} grid`}>
           <div className={styles['left-section']}>
             <h1>Oferujemy kursy Excel</h1>
-            <Link to='/oferta'> Oferta </Link>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum dolor est, euismod eget dignissim quis, finibus sit
+              amet turpis. Integer tempor nulla eu orci finibus, sit amet semper
+              velit porttitor.
+            </p>
+            <div className={`${styles['button-container']} grid`}>
+              <Link to='/oferta' className={styles['learn-more-button']}>
+                <span className={styles.circle} aria-hidden='true'>
+                  <span className={`${styles.icon} ${styles.arrow}`}></span>
+                </span>
+                <span className={styles['button-text']}>
+                  Zobacz pełną ofertę
+                </span>
+              </Link>
+            </div>
           </div>
           <div className={`${styles['right-section']} grid`}>
-              <div /> <div className={styles.content}></div>
-              <div className={styles.content}></div> <div />
-              <div /> <div className={styles.content}></div>
+            <div />
+            <div className={styles.content}>
+              <VideoHorizontal size='44' />
+              <h2> Ponad 50 filmów o wysokiej jakości </h2>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum dolor est, euismod eget dignissim quis, finibus sit
+                amet turpis.
+              </h3>
+            </div>
+            <div className={styles.content}>
+              <Profile size='44' />
+              <h2>Bieżące wsparcie od prowadzących</h2>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum dolor est, euismod eget dignissim quis, finibus sit
+                amet turpis.
+              </h3>
+            </div>
+            <div />
+            <div />
+            <div className={styles.content}>
+              <Crown1 size='44' /> <h2> Certyfikat ukończenia </h2>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum dolor est, euismod eget dignissim quis, finibus sit
+                amet turpis.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.about}>
+          <h3>Poznaj lepiej instruktora</h3>
+          <div className={`${styles['about-container']} grid`}>
+            <img src={instruktor} alt='Instruktor szkoleń Excel' />
+            <div className={styles['about-text']}>
+                <h4>Eryk Trojanowski</h4>
+                <h5>Założyciel & Instruktor</h5>
+                <div className={styles.socials}>
+
+                </div>
+            </div>
           </div>
         </div>
       </section>
