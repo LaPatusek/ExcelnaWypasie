@@ -4,11 +4,12 @@
 }
 
 .boxes {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 25% 25% 50%;
   padding-bottom: 1rem;
 }
 
-.container h2 {
+.container h2,
+.newsletter h2 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 22px;
@@ -17,6 +18,28 @@
   color: var(--excel-dark-green);
   user-select: none;
   padding-bottom: 12px;
+}
+
+.newsletter h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.newsletter input {
+  border-radius: 5px;
+  height: 26px;
+  padding: 5px;
+}
+
+.newsletter button {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-family: "Pou";
+  border-radius: 10px;
+  background-color: var(--excel-dark-green);
+  color: white;
+  cursor: pointer;
 }
 
 .mail,

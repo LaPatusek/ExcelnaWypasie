@@ -54,6 +54,12 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+
+        <div className={styles['newsletter']}>
+          <h2>Zapisz się do naszego newslettera</h2>
+          <h3>Bądź na bieżąco z aktualizacjami kursu, artykułami, itd.</h3>
+          <input type='email' placeholder='Wpisz swój adres e-mail'/> <button> Zapisz się</button>
+        </div>
       </div>
 
       <div className={styles.copyright}>
