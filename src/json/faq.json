@@ -1,0 +1,26 @@
+[
+    {
+      "question": "Pytanie numer 1",
+      "number": 1,
+      "answer":
+        "Odpowiedz nr 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales ornare. "
+    },
+    {
+      "question": "Pytanie numer 2",
+      "number": 2,
+      "answer":
+        "Odpowiedz nr 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales ornare. "
+    },
+    {
+      "question": "Pytanie numer 3",
+      "number": 3,
+      "answer":
+        "Odpowiedz nr 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales ornare. "
+    },
+    {
+      "question": "Pytanie numer 4",
+      "number": 4,
+      "answer":
+        "Odpowiedz nr 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales orare. "
+    }
+  ]

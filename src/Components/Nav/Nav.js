@@ -9,7 +9,9 @@ export default function Nav() {
     <Fragment>
       <div className={`${styles.nav} grid`}>
         <div className={styles.logo}>
-          <Link to='/'>Excel na Wypasie</Link>
+          <Link to='/'>
+            Excel na <br /> Wypasie
+          </Link>
         </div>
 
         <nav className={`${styles.navbar} grid`}>

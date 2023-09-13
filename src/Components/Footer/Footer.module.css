@@ -8,13 +8,17 @@
   padding-bottom: 1rem;
 }
 
+.newsletter {
+  justify-self: center;
+}
+
 .container h2,
 .newsletter h2 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 22px;
-  font-family: "Pou";
-  letter-spacing: .7px;
+  font-family: 'Pou';
+  letter-spacing: 0.7px;
   color: var(--excel-dark-green);
   user-select: none;
   padding-bottom: 12px;
@@ -28,18 +32,28 @@
 
 .newsletter input {
   border-radius: 5px;
-  height: 26px;
-  padding: 5px;
+  height: 27px;
+  padding: 6px;
 }
 
 .newsletter button {
   padding: 5px 15px;
   text-transform: uppercase;
-  font-family: "Pou";
+  font-family: 'Pou';
+  letter-spacing: 0.6px;
+  font-weight: bold;
   border-radius: 10px;
+  border: 1px solid transparent;
   background-color: var(--excel-dark-green);
   color: white;
   cursor: pointer;
+  transition: all 0.4s;
+}
+
+.newsletter button:hover {
+  background-color: transparent;
+  color: var(--excel-dark-green);
+  border: 1px solid var(--excel-dark-green);
 }
 
 .mail,
