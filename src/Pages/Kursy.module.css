@@ -1,0 +1,104 @@
+.kurs-header {
+  padding: 4rem;
+  height: 60vh;
+  text-align: center;
+}
+
+.kurs-header h1 {
+  font-size: 66px;
+  padding-top: 2.5rem;
+  font-family: 'Pou';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.kurs-header h2 {
+  font-size: 34px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.7px;
+  line-height: 38px;
+  font-weight: bold;
+  color: #1a1a1a;
+  user-select: none;
+}
+
+.container {
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: 4rem auto;
+  border-radius: 30px;
+  overflow: hidden;
+  color: rgb(20, 66, 42);
+  background: rgb(27, 81, 45);
+  background: linear-gradient(
+    0.32deg,
+    rgba(27, 116, 68, 1) 0%,
+    rgba(33, 163, 102, 1) 100%
+  );
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container-text h3 {
+  text-align: center;
+  font-family: 'Pou';
+  font-weight: bold;
+  padding-top: 1.5rem;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.container-text p {
+  padding: 0 2rem;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.zapis {
+  padding: 4rem;
+  background-color: var(--excel-light-green);
+  text-align: center;
+}
+
+.zapis h4 {
+  font-size: 44px;
+  font-family: 'Pou';
+  letter-spacing: 1px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.szkolenia-link {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-family: 'pou';
+  font-weight: bold;
+  font-size: 30px;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.szkolenia-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.szkolenia-link:hover::before {
+  background-color: #fff;
+}

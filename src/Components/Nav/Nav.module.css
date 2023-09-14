@@ -20,6 +20,7 @@
   justify-self: center;
   align-content: center;
   column-gap: 50px;
+  text-align: center;
 }
 
 .link {
@@ -28,38 +29,42 @@
   letter-spacing: 0.7px;
   transition: all 0.4s;
   font-family: 'Pou';
+  align-self: center;
 }
 
 .link:hover {
   color: white;
 }
 
-.button-stacjonarne {
-  text-align: center;
-  justify-self: right;
-  align-self: center;
+.button-oferta {
   background-color: var(--main-brown);
   padding: 10px 15px;
   border: 2px solid transparent;
   border-radius: 20px;
   transition: all 0.6s;
-  cursor: pointer;
+  font-family: "Pou";
 }
 
-.button-stacjonarne:hover {
+.button-oferta:hover {
   background-color: var(--white-text);
   border: 2px solid var(--main-brown);
 }
 
-.button-stacjonarne a {
+.oferta-link {
   color: var(--white-text);
-  font-size: 20px;
-  letter-spacing: 0.7px;
+  font-size: 24px;
   font-weight: bold;
-  transition: all 0.6s;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  align-self: center;
+  text-align: center;
+  justify-self: right;
 }
 
-.button-stacjonarne:hover a {
+.oferta-link:hover {
   color: var(--main-brown);
 }
 

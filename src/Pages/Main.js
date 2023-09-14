@@ -27,7 +27,7 @@ export default function Main() {
               velit porttitor.
             </p>
             <div className={`${styles['button-container']} grid`}>
-              <Link to='/oferta' className={styles['learn-more-button']}>
+              <Link to='/kursy' className={styles['learn-more-button']}>
                 <span className={styles.circle} aria-hidden='true'>
                   <span className={`${styles.icon} ${styles.arrow}`}></span>
                 </span>

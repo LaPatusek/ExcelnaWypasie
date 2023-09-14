@@ -16,7 +16,7 @@ export default function Nav() {
 
         <nav className={`${styles.navbar} grid`}>
           <Link to='/kursy' className={styles.link}>
-            Kursy
+            Szkolenia
           </Link>
           <Link to='/o-nas' className={styles.link}>
             O nas
@@ -26,11 +26,9 @@ export default function Nav() {
           </Link>
         </nav>
 
-        <div className={styles['button-stacjonarne']}>
-          <a href='https://www.excelrzeszow.pl/#/' target='blank'>
-            Szkolenia <br /> stacjonarne
-          </a>
-        </div>
+        <Link to='/oferta' className={styles['oferta-link']}>
+          <div className={styles['button-oferta']}>Oferta kursów</div>
+        </Link>
       </div>
       <div className={styles['nav-800']}></div>
     </Fragment>

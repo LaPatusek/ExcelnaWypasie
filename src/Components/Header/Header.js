@@ -22,7 +22,7 @@ export default function Header() {
         <h1>
           Naucz się z nami <br /> programować w excel
         </h1>
-        <Link to='/kursy'>
+        <Link to='/oferta'>
           <HeaderButton />
         </Link>
       </div>
