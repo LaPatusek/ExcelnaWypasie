@@ -39,3 +39,7 @@ code {
 .flex {
   display: flex;
 }
+
+.active {
+  color: #fff !important;
+}

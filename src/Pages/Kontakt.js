@@ -1,6 +1,5 @@
 import { Call, Location, TickCircle } from 'iconsax-react';
 import { Fragment, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import useInput from '../Components/hooks/useInput';
 import styles from './Kontakt.module.css';
 
@@ -103,8 +102,8 @@ const Kontakt = () => {
             </svg>
             <h3>eMail</h3>
             <p>
-              <a href='mailto:kontakt@stronynawypasie.pl'>
-                kontakt@stronynawypasie.pl
+              <a href='mailto:kontakt@excelnawypasie.pl'>
+                kontakt@excelnawypasie.pl
               </a>
             </p>
             <p>
@@ -131,10 +130,10 @@ const Kontakt = () => {
         <section className={styles['left-section']}>
           <h3>Skontaktuj się z nami!</h3>
           <p>
-            Chcesz aby Twoja strona internetowa była naprawdę efektywna?
-            Zapraszamy do kontaktu, napisz czego potrzebujesz! My zajmiemy się
-            resztą. Prośby o wycenę prosimy kierować{' '}
-            <Link to='/formularz-kontaktowy'>tutaj</Link>.
+            Naszym celem jest omówienie Twoich potrzeb, odpowiedź na Twoje
+            pytania i dostarczenie wszystkich niezbędnych informacji. Nasz
+            zespół jest gotowy, aby Ci pomóc w znalezieniu najlepszego
+            rozwiązania, które spełni Twoje oczekiwania i cele.
           </p>
         </section>
 

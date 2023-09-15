@@ -31,11 +31,14 @@ export default function About() {
           </h1>
 
           <h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-            tincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis
-            metus sodales ornare. Curabitur maximus arcu ac leo tincidunt auctor
-            pulvinar et sapien. Nunc mauris nunc, tristique vitae dictum vel,
-            condimentum non ante. Maecenas accumsan neque eget fermentum pretium
+            Mamy wieloletnie doświadczenie w prowadzeniu szkoleń stacjonarnych,
+            ale teraz skupiamy się na dostarczaniu najwyższej jakości nauki z
+            zakresu Excela. Dzięki naszej wiedzy i profesjonalizmowi, nasi
+            uczestnicy mogą zdobywać umiejętności związane z arkuszem
+            kalkulacyjnym Excel w dogodny dla siebie sposób, dostosowany do
+            swojego tempa i harmonogramu. Jeśli szukasz pewnego wyboru dla
+            siebie lub swoich kolegów, którzy chcą rozwijać swoją wiedzę z
+            Excela, to "Excel na Wypasie" to odpowiedni wybór.
           </h2>
         </div>
         <img
@@ -61,11 +64,16 @@ export default function About() {
       <div className={styles['newsletter']}>
         <h3>Zapisz się do naszego newslettera</h3>
         <p>
-          Bez spamu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Bez spamu. Dołącz do naszej społeczności, gdzie dostaniesz dostęp do
+          najnowszych aktualizacji.
         </p>
-        <form>
-          <input type='text' placeholder='Wpisz swój adres e-mail' />
-          <button onClick={newsletterFunction}>Zapisz się</button>
+        <form onSubmit={newsletterFunction}>
+          <input
+            type='email'
+            placeholder='Wpisz swój adres e-mail'
+            id='newsletter'
+          />
+          <button>Zapisz się</button>
         </form>
       </div>
 

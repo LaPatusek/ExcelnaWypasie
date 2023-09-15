@@ -42,7 +42,7 @@
   border: 2px solid transparent;
   border-radius: 20px;
   transition: all 0.6s;
-  font-family: "Pou";
+  font-family: 'Pou';
 }
 
 .button-oferta:hover {
@@ -72,12 +72,69 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
   .nav {
     display: none !important;
   }
 
   .nav-800 {
-    display: block;
+    display: grid;
+    background-color: var(--excel-light-green);
+    padding: 2rem;
+    position: relative;
+  }
+
+  .logo-800 a {
+    color: white;
+    font-family: 'Pou';
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  .menu-800 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgb(27, 81, 45);
+    background: linear-gradient(
+      0.32deg,
+      rgba(27, 116, 68, 1) 0%,
+      rgba(33, 163, 102, 1) 100%
+    );
+    text-align: center;
+    z-index: 10;
+  }
+
+  .link-800 {
+    font-family: 'Pou';
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(20, 66, 42);
+    letter-spacing: 1px;
+    z-index: 30;
+  }
+
+  .wave-800 {
+    z-index: 21;
+    position: absolute;
+    bottom: -84vh;
+  }
+
+   .test {
+    color: #fff !important;
   }
 }

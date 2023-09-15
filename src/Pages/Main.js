@@ -21,10 +21,11 @@ export default function Main() {
           <div className={styles['left-section']}>
             <h1>Oferujemy kursy Excel</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum dolor est, euismod eget dignissim quis, finibus sit
-              amet turpis. Integer tempor nulla eu orci finibus, sit amet semper
-              velit porttitor.
+              Pozwalają one zdobyć kompleksową wiedzę na temat tego potężnego
+              narzędzia do analizy danych <br /> i raportowania, aby pomóc Ci w
+              opanowaniu tajników tego popularnego programu i rozwijaniu
+              umiejętności niezbędnych do efektywnej pracy z arkuszami
+              kalkulacyjnymi.
             </p>
             <div className={`${styles['button-container']} grid`}>
               <Link to='/kursy' className={styles['learn-more-button']}>
@@ -38,39 +39,42 @@ export default function Main() {
             </div>
           </div>
           <div className={`${styles['right-section']} grid`}>
-            <div />
+            <div className={styles.space} />
             <div className={styles.content}>
               <VideoHorizontal size='44' />
               <h2> Ponad 50 filmów o wysokiej jakości </h2>
               <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum dolor est, euismod eget dignissim quis, finibus sit
-                amet turpis.
+                Nasza platforma zawiera ponad 50 filmów szkoleniowych w
+                najwyższej jakości, aby zapewnić Ci doskonałą wizualizację i
+                zrozumienie materiałów.
               </h3>
             </div>
             <div className={styles.content}>
               <Profile size='44' />
               <h2>Bieżące wsparcie od prowadzących</h2>
               <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum dolor est, euismod eget dignissim quis, finibus sit
-                amet turpis.
+                Nasi doświadczeni prowadzący są zawsze dostępni, aby udzielić Ci
+                bieżącej pomocy i odpowiedzi na Twoje pytania podczas nauki.
               </h3>
             </div>
-            <div />
-            <div />
+            <div className={styles.space} />
+            <div className={styles.space} />
             <div className={styles.content}>
               <Crown1 size='44' /> <h2> Certyfikat ukończenia </h2>
               <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum dolor est, euismod eget dignissim quis, finibus sit
-                amet turpis.
+                Po pomyślnym zakończeniu kursu otrzymasz certyfikat ukończenia,
+                który potwierdzi Twoje umiejętności i pomoże w rozwoju
+                zawodowym.
               </h3>
             </div>
           </div>
         </div>
 
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' className={styles['wave-spacer-flipped']}>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1440 320'
+          className={styles['wave-spacer-flipped']}
+        >
           <path
             fill='#21a366'
             fillOpacity='1'
@@ -81,14 +85,18 @@ export default function Main() {
         <div className={`${styles.kontakt} grid`}>
           <h2>Rozwiejemy Twoje wątpliwości!</h2>
           <h3>
-            W razie problemów lub niepewności prosimy o{' '}
-            <Link to='/kontakt'>Kontakt</Link> lub skorzystanie z naszego{' '}
-            <Link to='/o-nas#faq'>FAQ</Link>, który odpowiada na często zadawane
-            pytania{' '}
+            Jeśli napotkasz trudności lub masz wątpliwości, zachęcamy do
+            nawiązania <Link to='/kontakt'>Kontaktu</Link> lub skorzystania z
+            naszego zestawienia często zadawanych pytań (
+            <Link to='/o-nas#faq'>FAQ</Link>)
           </h3>
         </div>
 
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' className={styles['wave-spacer']}>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          viewBox='0 0 1440 320'
+          className={styles['wave-spacer']}
+        >
           <path
             fill='#21a366'
             fillOpacity='1'

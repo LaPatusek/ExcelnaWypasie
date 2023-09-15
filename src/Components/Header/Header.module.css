@@ -116,3 +116,23 @@
   initial-value: 0;
   inherits: false;
 }
+
+@media screen and (max-width: 800px) {
+  .spacer {
+    height: 50vh;
+  }
+
+  .text h1 {
+    font-size: 35px;
+  }
+
+  .three-boxes {
+    transform: translateY(30px);
+  }
+
+  .expierience {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+
+}

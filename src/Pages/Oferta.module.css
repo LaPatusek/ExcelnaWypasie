@@ -85,8 +85,16 @@
   font-size: 50px;
   letter-spacing: 1px;
   color: #1a1a1a;
-  margin-bottom: 40px;
   user-select: none;
+}
+
+.sub-title {
+  text-align: center;
+  color: #1a1a1a;
+  user-select: none;
+  margin-bottom: 40px;
+  font-family: "Pou";
+  font-size: 30px;
 }
 
 .oferta {
@@ -95,6 +103,7 @@
 }
 
 .oferta-container {
+  position: relative;
   border-radius: 20px;
   padding: 1.5rem;
 }
@@ -242,6 +251,13 @@
   width: 90%;
 }
 
+.start-container {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+}
+
 .container-link {
   text-align: center;
   display: block;
@@ -287,9 +303,27 @@
     row-gap: 50px;
   }
 
+  .start-container {
+    position: relative;
+  }
+
   .oferta-container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .zalety {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .oferta-wrap {
+    padding: 4rem 2rem;
+  }
+
+  .oferta-container {
+    width: 100%;
   }
 }

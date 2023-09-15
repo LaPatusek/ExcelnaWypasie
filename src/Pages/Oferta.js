@@ -38,8 +38,8 @@ export default function Oferta() {
             <br /> materiałów
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dolor est,
+            Oferujemy ponad 50 godzin materiałów szkoleniowych, które pozwolą Ci
+            opanować Excel od podstaw do zaawansowanych technik.
           </p>
         </div>
 
@@ -50,8 +50,9 @@ export default function Oferta() {
             <br /> support
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dolor est,
+            Nasz zespół wsparcia jest gotowy do odpowiedzi na Twoje pytania i
+            rozwiązywania problemów, zapewniając Ci pomoc na każdym
+            etapie nauki.
           </p>
         </div>
 
@@ -61,8 +62,9 @@ export default function Oferta() {
             Aktualne <br /> dane
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dolor est,
+            Nasze kursy są zawsze oparte na najnowszych informacjach i
+            technologiach, abyś mógł być na bieżąco z najważniejszymi aspektami
+            Excela.
           </p>
         </div>
 
@@ -73,8 +75,8 @@ export default function Oferta() {
             <br /> aktualizacje
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dolor est,
+            Nasza platforma jest regularnie aktualizowana, dzięki czemu możesz
+            mieć pewność, że masz dostęp do najnowszych narzędzi i treści.
           </p>
         </div>
       </div>
@@ -91,41 +93,55 @@ export default function Oferta() {
 
       <div className={styles['oferta-wrap']}>
         <h2>Poziomy</h2>
+        <h3 className={styles['sub-title']}>
+          Wejdź na wyższy poziom z naszymi kursami
+        </h3>
         <div className={`${styles['oferta']} grid`}>
           <div className={`${styles['oferta-container']} ${styles.brown}`}>
             <h3>poziom 1</h3>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+            <h4>
+              Rozpocznij naukę Excela od podstaw i zdobądź pewność w tworzeniu
+              arkuszy kalkulacyjnych.
+            </h4>
             <div className={`${styles.list} ${styles['brown-list']}`}>
               <ol>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Tworzenie i zarządzanie arkuszami.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Formatowanie komórek: czcionka, kolor, pogrubienie, kursywa
+                  itp.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Używanie operacji matematycznych w formułach.
                 </li>
                 {bonusOffers && (
                   <Fragment>
@@ -133,31 +149,65 @@ export default function Oferta() {
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Praca grupowa - komentowanie
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Wprowadzenie do funkcji i formuł: składnia i zastosowanie
+                      na prostych przykładach.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Kopiowanie, wycinanie, wklejanie danych oraz korzystanie z
+                      opcji wklejania specjalnego.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Używanie podstawowych funkcji wbudowanych: SUMA, ŚREDNIA,
+                      MAX, MIN.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Wprowadzanie i formatowanie danych: tekst, liczby, daty,
+                      waluty.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Tworzenie i formatowanie tabel danych.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Automatyczne uzupełnianie danych.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Autouzupełnianie, adresowanie względne.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Sortowanie danych: rosnąco, malejąco.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Filtorwanie danych oraz filtrowanie wielopoziomowe.
                     </li>
                   </Fragment>
                 )}
@@ -178,38 +228,50 @@ export default function Oferta() {
 
           <div className={`${styles['oferta-container']} ${styles.green}`}>
             <h3>poziom 2</h3>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+            <h4>
+              Zyskaj dostęp do zaawansowanych kursów, aby opanować skomplikowane
+              formuły i analizować dane w Excelu.
+            </h4>
             <div className={`${styles.list} ${styles['green-list']}`}>
               <ol>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Adresowanie bezwzględne oraz mieszane.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Operacje na tekście, zmiana wielkości liter, łączenie oraz
+                  wyciąganie znaków.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Funkcje logiczne: JEŻELI, WIELR, ORAZ, LUB, NIE.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Funkcje łączące tekst, odczytujące określone fragmenty.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Grupowanie, filtrowanie i ukrywanie danych w tabelach
+                  przestawnych.
+                </li>
+
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Funkcja WYSZUKAJ.PIONOWO
                 </li>
                 {bonusOffers && (
                   <Fragment>
@@ -217,31 +279,50 @@ export default function Oferta() {
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Funkcje warunkowe LICZ.JEŻELI, ILE.NIEPUSTYCH.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Tworzenie i zarządzanie tabelami przestawnymi.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Fukcje daty i czasu
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Tworzenie interaktywnych formularzy za pomocą kontrolek.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Zabezpieczanie komórek przed edycją: blokowanie i
+                      odblokowywanie.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Ustalanie haseł dla plików i arkuszy.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Wprowadzenie do systemu wizualizacji danych - wykresy.
+                    </li>
+                    <li>
+                      <i aria-hidden='true'>
+                        <Tick />
+                      </i>
+                      Formatowanie warunkowe
                     </li>
                   </Fragment>
                 )}
@@ -250,50 +331,64 @@ export default function Oferta() {
                 <button onClick={offerFunction}>Zobacz pełną ofertę</button>
               )}
             </div>
-            <h5>Cena zł</h5>
-            <button className={styles['buy-button']}>
-              Rozpocznij już teraz
-            </button>
 
-            <Link to='/' className={styles['container-link']}>
-              Dowiedz się więcej
-            </Link>
+            <div className={styles['start-container']}>
+              <h5>Cena zł</h5>
+              <button className={styles['buy-button']}>
+                Rozpocznij już teraz
+              </button>
+
+              <Link to='/' className={styles['container-link']}>
+                Dowiedz się więcej
+              </Link>
+            </div>
           </div>
 
           <div className={`${styles['oferta-container']} ${styles.blue}`}>
             <h3>poziom 3</h3>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+            <h4>
+              Stań się ekspertem Excela dzięki kursom programowania w VBA i
+              zaawansowanej analizy danych.
+            </h4>
             <div className={`${styles.list} ${styles['blue-list']}`}>
               <ol>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Operacje statystyczne
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Funckje finansowe
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Import / eksport danych do CSV, PDF
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Tworzenie interaktywnych dashboardów: łączenie różnych arkuszy
+                  i wykresów.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                  Wprowadzenie do makr: nagrywanie i edycja makr.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Wprowadzenie do języka VBA: edytor VBA, zmienne, pętle,
+                  instrukcje warunkowe.
                 </li>
                 {bonusOffers && (
                   <Fragment>
@@ -301,31 +396,26 @@ export default function Oferta() {
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Udostępnianie plików online za pomocą platformy chmurowej.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Tworzenie scenariuszy w oparciu o różne warianty
+                      kalkulacji.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Generowanie raportów.
                     </li>
                     <li>
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-                    </li>
-                    <li>
-                      <i aria-hidden='true'>
-                        <Tick />
-                      </i>
-                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Analiza danych
                     </li>
                   </Fragment>
                 )}
@@ -334,14 +424,16 @@ export default function Oferta() {
                 <button onClick={offerFunction}>Zobacz pełną ofertę</button>
               )}
             </div>
-            <h5>Cena zł</h5>
-            <button className={styles['buy-button']}>
-              Rozpocznij już teraz
-            </button>
+            <div className={styles['start-container']}>
+              <h5>Cena zł</h5>
+              <button className={styles['buy-button']}>
+                Rozpocznij już teraz
+              </button>
 
-            <Link to='/' className={styles['container-link']}>
-              Dowiedz się więcej
-            </Link>
+              <Link to='/' className={styles['container-link']}>
+                Dowiedz się więcej
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -250,3 +250,56 @@
 .socials svg:hover {
   transform: scale(1.15);
 }
+
+@media screen and (max-width: 1000px) {
+  .oferta {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .oferta h1 {
+    text-align: center;
+  }
+
+  .left-section {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .right-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .space {
+    display: none;
+  }
+
+  .oferta {
+    padding: 2rem;
+  }
+
+  .kontakt {
+    padding: 4rem 1rem;
+  }
+
+  .kontakt h3 {
+    width: 80%;
+  }
+
+  .left-section p {
+    width: unset;
+  }
+
+  .button-container {
+    width: unset;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-container img {
+    width: 320px;
+    height: 320px;
+  }
+}

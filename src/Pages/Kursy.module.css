@@ -102,3 +102,27 @@
 .szkolenia-link:hover::before {
   background-color: #fff;
 }
+
+@media screen and (max-width: 1000px) {
+  .kurs-header {
+    padding: 4rem 2rem;
+  }
+
+  .kurs-header h2 {
+    width: 90%;
+  }
+
+  .container {
+    margin-top: 0;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+
+  .container p {
+    padding-bottom: 25px;
+  }
+
+  .zapis {
+    padding: 4rem 2rem;
+  }
+}

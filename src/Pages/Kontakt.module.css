@@ -276,6 +276,7 @@
   .kontakt {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
+    padding-bottom: 2rem;
   }
 
   .right-section {

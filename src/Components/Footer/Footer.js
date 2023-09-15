@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  const newsletterFunction = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={styles.footer}>
       <div className={`${styles.boxes} grid`}>
@@ -31,8 +35,8 @@ export default function Footer() {
               <path d='M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z' />
             </svg>
 
-            <a href='mailto:kontakt@stronynawypasie.pl'>
-              kontakt@stronynawypasie.pl
+            <a href='mailto:kontakt@excelnawypasie.pl'>
+              kontakt@excelnawypasie.pl
             </a>
           </div>
         </div>
@@ -52,13 +56,23 @@ export default function Footer() {
             <Link to='/kontakt' className={styles.link}>
               <ArrowRight3 variant='Broken' color='#FFF' size='20px' /> Kontakt
             </Link>
+            <Link to='/oferta' className={styles.link}>
+              <ArrowRight3 variant='Broken' color='#FFF' size='20px' /> Oferta
+            </Link>
           </div>
         </div>
 
         <div className={styles['newsletter']}>
           <h2>Zapisz się do naszego newslettera</h2>
           <h3>Bądź na bieżąco z aktualizacjami kursu, artykułami, itd.</h3>
-          <input type='email' placeholder='Wpisz swój adres e-mail'/> <button> Zapisz się</button>
+          <form onSubmit={newsletterFunction}>
+            <input
+              type='email'
+              placeholder='Wpisz swój adres e-mail'
+              id='newsletter'
+            />{' '}
+            <button> Zapisz się</button>
+          </form>
         </div>
       </div>
 

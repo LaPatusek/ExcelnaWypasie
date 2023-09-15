@@ -125,7 +125,7 @@
 @media screen and (max-width: 900px) {
   .footer {
     background-color: var(--excel-light-green);
-    padding: 0 4rem;
+    padding: 2 4rem;
     padding-bottom: 2rem;
   }
 
@@ -136,5 +136,27 @@
   .boxes {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 0rem;
+  }
+
+  .newsletter h3,
+  .newsletter h2 {
+    text-align: center;
+  }
+
+  .newsletter input {
+    margin-bottom: 10px;
+  }
+
+  .newsletter form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter button {
+    padding: 8px 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
