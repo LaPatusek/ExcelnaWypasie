@@ -71,7 +71,8 @@
 .first-count,
 .second-count,
 .third-count {
-  color: white;
+  /* color: white; */
+  color: var(--excel-dark-green);
   font-size: 44px;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -102,7 +103,8 @@
 }
 
 .container p {
-  color: #bbffdf;
+  /* color: #bbffdf; */
+  color: #0f4126;
   font-size: 22px;
   letter-spacing: 0.7px;
 }

@@ -27,7 +27,8 @@
 }
 
 .left-section p {
-  color: #fff;
+  /* color: #fff; */
+  color: #0f4126;
   width: 482px;
   letter-spacing: 0.6px;
   font-size: 18px;
@@ -41,7 +42,7 @@
 .content {
   display: grid;
   justify-content: center;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
   margin: 10px 0;
 }
@@ -58,12 +59,14 @@
   line-height: 30px;
   user-select: none;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: var(--excel-green);
 }
 
 .content h3 {
   font-size: 16px;
   margin: 8px auto 0 auto;
   width: 90%;
+  color: #0f4126;
 }
 
 .button-container {
@@ -124,7 +127,8 @@
   bottom: 0;
   padding: 0.45rem 0;
   margin: 0 0 0 2.5rem;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--excel-light-green);
   font-weight: bold;
   letter-spacing: 0.7px;
   line-height: 1.6;
