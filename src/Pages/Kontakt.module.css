@@ -67,8 +67,7 @@
 .left-section h3 {
   color: var(--excel-green);
   font-family: 'Pou';
-  margin-bottom: 50px;
-  margin-top: 30px;
+  margin: 30px 0 50px 0;
   font-size: 33px;
 }
 
@@ -235,9 +234,8 @@
 
 .group p {
   position: absolute;
-  margin-top: 4px;
   font-size: 14px;
-  margin-left: 4px;
+  margin: 4px 0 0 4px;
   color: red;
 }
 
@@ -259,11 +257,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  .title {
-    height: fit-content;
-    max-height: unset;
-  }
-
   .title h2 {
     padding-bottom: 50px;
   }
@@ -282,7 +275,7 @@
   .right-section {
     width: 90%;
     padding: 0 !important;
-    justify-self: center;
+    justify-self: right;
   }
 
   .left-section {
@@ -296,10 +289,5 @@
 
   .left-section h4 {
     margin-bottom: 25px;
-  }
-
-  .right-section {
-    padding-right: 0;
-    padding-left: 2rem;
   }
 }

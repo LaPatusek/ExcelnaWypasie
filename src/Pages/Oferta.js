@@ -437,6 +437,8 @@ export default function Oferta() {
           </div>
         </div>
       </div>
+
+      <div className={styles['white-spacer-800']} />
     </div>
   );
 }

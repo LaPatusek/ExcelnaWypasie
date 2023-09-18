@@ -7,7 +7,9 @@ export default function Kursy() {
     <div className={styles.kurs}>
       <div className={styles['kurs-header']}>
         <h1>Excel na Wypasie</h1>
-        <h2>Oferujemy szkolenia online jak i szkolenia stacjonarne </h2>
+        <h2>
+          Oferujemy szkolenia online <br /> jak i szkolenia stacjonarne{' '}
+        </h2>
       </div>
 
       <div className={`${styles.container} grid`}>
@@ -60,7 +62,7 @@ export default function Kursy() {
           href='https://www.excelrzeszow.pl/#/wycena-szkolenie'
           target='_blank'
           className={styles['szkolenia-link']}
-          rel="noreferrer"
+          rel='noreferrer'
         >
           {' > '} Excel w Rzeszowie
         </a>

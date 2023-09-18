@@ -103,7 +103,7 @@ export default function About() {
               >
                 <h4>
                   {element.question}{' '}
-                  <ArrowRight2 size='22' color='#fff' variant='Bold' />
+                  <ArrowRight2 size='22' color='#33c481' variant='Bold' />
                 </h4>
               </div>
               {isActive && (

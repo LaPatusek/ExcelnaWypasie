@@ -17,20 +17,16 @@
   line-height: 56px;
   letter-spacing: 1px;
   user-select: none;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--excel-light-green);
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
+  color: var(--excel-text-green);
 }
 
 .about-header h2 {
-  padding: 2rem;
+  padding: 1.5rem;
   width: 700px;
   font-size: 28px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   letter-spacing: 0.7px;
 }
 
@@ -52,8 +48,7 @@
   justify-content: center;
   text-align: center;
   background-color: var(--white-text);
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding: 6rem 0 4rem 0;
 }
 
 .newsletter h3 {
@@ -62,6 +57,7 @@
   letter-spacing: 1px;
   padding-bottom: 10px;
   text-transform: uppercase;
+  color: var(--excel-green);
 }
 
 .newsletter p {
@@ -75,6 +71,18 @@
   padding: 5px;
   border-radius: 10px;
   margin-right: 10px;
+  border: 2px solid transparent;
+  transition: all 0.4s;
+}
+
+.newsletter input:hover,
+.newsletter input:focus {
+  border: 2px solid var(--excel-light-green);
+}
+
+.newsletter input::placeholder {
+  letter-spacing: 0.5px;
+  color: var(--excel-dark-green);
 }
 
 .newsletter button {
@@ -84,9 +92,17 @@
   font-weight: bold;
   letter-spacing: 0.7px;
   background-color: var(--excel-light-green);
+  border: 2px solid transparent;
   border-radius: 10px;
   color: white;
   cursor: pointer;
+  transition: all 0.4s;
+}
+
+.newsletter button:hover {
+  border: 2px solid var(--excel-light-green);
+  color: var(--excel-light-green);
+  background-color: transparent;
 }
 
 .faq {
@@ -99,7 +115,8 @@
   font-family: 'Pou';
   font-size: 34px;
   letter-spacing: 1px;
-  color: white;
+  color: var(--excel-text-green);
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   text-transform: uppercase;
   padding-bottom: 2rem;
   width: fit-content;
@@ -126,7 +143,7 @@
 
 .question h4 {
   text-align: center;
-  color: white;
+  color: var(--excel-text-green);
   font-family: 'Pou';
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -147,19 +164,26 @@
   background-color: #6d523c;
   width: 500px;
   padding: 0rem 2rem 1.5rem 2rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   cursor: pointer;
 }
 
 .answer p {
-  color: var(--white-text);
+  color: #fff;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 1000px) {
+  .flipped-wave-spacer {
+    transform: rotate(180deg) translateY(-5px);
+  }
+
+  .wave-spacer {
+    transform: translateY(-2px);
+  }
+
   .about-header {
     padding: 0 1rem;
     column-gap: 0;
@@ -174,10 +198,16 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .question-wrap {
-    width: 90%;
+  .newsletter h3 {
+    font-size: 28px;
   }
 
+  .newsletter p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .question-wrap,
   .answer {
     width: 90%;
   }

@@ -17,8 +17,7 @@
 .oferta-header h2 {
   font-size: 34px;
   width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   letter-spacing: 0.7px;
   line-height: 38px;
   font-weight: bold;
@@ -84,16 +83,16 @@
   text-transform: uppercase;
   font-size: 50px;
   letter-spacing: 1px;
-  color: #1a1a1a;
+  color: var(--excel-green);
   user-select: none;
 }
 
 .sub-title {
   text-align: center;
-  color: #1a1a1a;
+  color: var(--excel-light-green);
   user-select: none;
   margin-bottom: 40px;
-  font-family: "Pou";
+  font-family: 'Pou';
   font-size: 30px;
 }
 
@@ -125,12 +124,8 @@
 
 .green {
   color: rgb(20, 66, 42);
-  background: rgb(27, 81, 45);
-  background: linear-gradient(
-    0.32deg,
-    rgba(27, 116, 68, 1) 0%,
-    rgba(33, 163, 102, 1) 100%
-  );
+  background: var(--excel-green);
+  background: linear-gradient(0.32deg, var(--excel-green) 0%, #33c481 100%);
 }
 
 .green button,
@@ -179,7 +174,7 @@
 }
 
 .green-list {
-  background-color: rgba(33, 163, 102, 1);
+  background-color: var(--excel-light-green);
   background: linear-gradient(
       180deg,
       hsla(0, 0%, 98.8%, 0.3),
@@ -293,6 +288,10 @@
   filter: brightness(1.1);
 }
 
+.white-spacer-800 {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   .zalety {
     grid-template-columns: repeat(2, 1fr);
@@ -309,12 +308,25 @@
 
   .oferta-container {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
+  .oferta-header {
+    transform: translateY(-2px);
+  }
+
+  .flipped-wave-first,
+  .flipped-wave,
+  .zalety {
+    transform: translateY(-5px);
+  }
+
+  .oferta-wrap {
+    transform: translateY(-6px);
+  }
+
   .zalety {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -325,5 +337,24 @@
 
   .oferta-container {
     width: 100%;
+  }
+
+  .white-spacer-800 {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    background-color: var(--white-text);
+    transform: translateY(-8px);
+  }
+
+  .white-spacer-800::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 10px;
+    background-color: var(--white-text);
   }
 }

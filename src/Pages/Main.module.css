@@ -14,20 +14,20 @@
   display: grid;
   align-content: center;
   margin-top: 20%;
-  color: #fff;
 }
 
 .left-section h1 {
+  color: var(--excel-text-green);
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   font-size: 38px;
   font-family: 'Pou';
   letter-spacing: 0.7px;
   margin-bottom: 5px;
   place-self: center;
-  color: #24be77;
 }
 
 .left-section p {
+  color: #fff;
   width: 482px;
   letter-spacing: 0.6px;
   font-size: 18px;
@@ -41,7 +41,7 @@
 .content {
   display: grid;
   justify-content: center;
-  color: white;
+  color: #fff;
   text-align: center;
   margin: 10px 0;
 }
@@ -62,16 +62,13 @@
 
 .content h3 {
   font-size: 16px;
-  margin-top: 8px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 8px auto 0 auto;
   width: 90%;
 }
 
 .button-container {
-  margin-top: 2rem;
   width: 482px;
-  margin-right: auto;
+  margin: 2rem 0 0 auto;
 }
 
 .learn-more-button {
@@ -173,14 +170,20 @@
   font-size: 28px;
   width: 50%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   line-height: 30px;
   letter-spacing: 0.6px;
 }
 
 .kontakt a {
-  color: #6d523c;
+  color: var(--excel-dark-green);
+  filter: brightness(0.8);
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.kontakt a:hover {
+  filter: brightness(0.5);
 }
 
 .about {
@@ -194,7 +197,7 @@
   text-align: center;
   letter-spacing: 1px;
   user-select: none;
-  color: white;
+  color: var(--excel-text-green);
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
@@ -236,9 +239,7 @@
 .socials {
   grid-template-columns: repeat(4, 1fr);
   width: fit-content;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto 0 auto;
   column-gap: 10px;
   transform: translateX(-4px);
 }
@@ -252,6 +253,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .wave-spacer-flipped {
+    transform: rotate(180deg) translateY(-5px);
+  }
+
+  .wave-spacer {
+    transform: translateY(-2px);
+  }
+
   .oferta {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -262,11 +271,13 @@
 
   .left-section {
     padding-bottom: 2rem;
+    margin-top: 5%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .right-section {
+  .right-section,
+  .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -275,7 +286,7 @@
   }
 
   .oferta {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .kontakt {
@@ -286,20 +297,22 @@
     width: 80%;
   }
 
+  .left-section {
+    justify-self: left;
+  }
+
   .left-section p {
     width: unset;
+    width: 90%;
+    text-align: center;
   }
 
   .button-container {
     width: unset;
   }
 
-  .about-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .about-container img {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
 }
