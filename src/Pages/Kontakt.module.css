@@ -259,6 +259,10 @@
 }
 
 @media screen and (max-width: 800px) {
+  .title {
+    transform: translateY(-2px);
+  }
+
   .title h2 {
     padding-bottom: 50px;
   }
