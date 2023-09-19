@@ -58,7 +58,7 @@
   font-family: 'Pou';
   line-height: 30px;
   user-select: none;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  font-weight: bold;
   color: var(--excel-green);
 }
 
@@ -127,7 +127,6 @@
   bottom: 0;
   padding: 0.45rem 0;
   margin: 0 0 0 2.5rem;
-  /* color: #fff; */
   color: var(--excel-light-green);
   font-weight: bold;
   letter-spacing: 0.7px;
@@ -207,7 +206,12 @@
 
 .about-container {
   position: relative;
-  background-color: #6f533f;
+  background: rgb(87, 65, 50);
+  background: linear-gradient(
+    0.32deg,
+    rgb(87, 65, 50) 0%,
+    rgb(141, 105, 80) 80%
+  );
   margin-top: 2rem;
   padding: 2rem;
   grid-template-columns: repeat(2, 1fr);

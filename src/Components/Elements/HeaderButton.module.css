@@ -11,13 +11,15 @@
 }
 
 .c-button--gooey {
-  color: #c39a7c;
+  background-color: var(--white-text);
+  color: #a37a5c;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: 4px solid #e1b89c;
+  border: 4px solid #a37a5c;
   border-radius: 0;
   position: relative;
   transition: all 700ms ease;
+  font-family: "Pou";
 }
 
 .c-button--gooey .c-button__blobs {
@@ -33,7 +35,7 @@
 }
 
 .c-button--gooey .c-button__blobs div {
-  background-color: #e1b89c;
+  background-color: #a37a5c;
   width: 34%;
   height: 100%;
   border-radius: 100%;

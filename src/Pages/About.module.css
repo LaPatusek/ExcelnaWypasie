@@ -19,6 +19,7 @@
   user-select: none;
   margin: 0 auto 2rem auto;
   color: var(--excel-text-green);
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .about-header h2 {
@@ -28,6 +29,7 @@
   text-align: center;
   margin: 0 auto;
   letter-spacing: 0.7px;
+  color: #1a1a1a;
 }
 
 .about-header img {
@@ -47,7 +49,7 @@
   display: grid;
   justify-content: center;
   text-align: center;
-  background-color: var(--white-text);
+  background-color: #a37a5c;
   padding: 6rem 0 4rem 0;
 }
 
@@ -57,7 +59,8 @@
   letter-spacing: 1px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  color: var(--excel-green);
+  color: var(--excel-text-green);
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .newsletter p {

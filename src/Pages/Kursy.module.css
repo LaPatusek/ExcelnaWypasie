@@ -11,7 +11,7 @@
   letter-spacing: 1px;
   font-weight: bold;
   user-select: none;
-  color: var(--excel-text-green);
+  color: var(--excel-green);
 }
 
 .kurs-header h2 {
@@ -21,9 +21,9 @@
   letter-spacing: 0.5px;
   line-height: 38px;
   font-weight: bold;
-  color: #bbffdf;
+  color: var(--excel-dark-green);
   user-select: none;
-  font-family: "Pou";
+  font-family: 'Pou';
 }
 
 .container {

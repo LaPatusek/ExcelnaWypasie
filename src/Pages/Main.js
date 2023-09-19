@@ -41,7 +41,7 @@ export default function Main() {
           <div className={`${styles['right-section']} grid`}>
             <div className={styles.space} />
             <div className={styles.content}>
-              <VideoHorizontal size='44' />
+              <VideoHorizontal size='44' color='var(--excel-dark-green)' />
               <h2> Ponad 50 filmów o wysokiej jakości </h2>
               <h3>
                 Nasza platforma zawiera ponad 50 filmów szkoleniowych w
@@ -50,7 +50,7 @@ export default function Main() {
               </h3>
             </div>
             <div className={styles.content}>
-              <Profile size='44' />
+              <Profile size='44' color='var(--excel-dark-green)' />
               <h2>Bieżące wsparcie od prowadzących</h2>
               <h3>
                 Nasi doświadczeni prowadzący są zawsze dostępni, aby udzielić Ci
@@ -60,7 +60,8 @@ export default function Main() {
             <div className={styles.space} />
             <div className={styles.space} />
             <div className={styles.content}>
-              <Crown1 size='44' /> <h2> Certyfikat ukończenia </h2>
+              <Crown1 size='44' color='var(--excel-dark-green)' />{' '}
+              <h2> Certyfikat ukończenia </h2>
               <h3>
                 Po pomyślnym zakończeniu kursu otrzymasz certyfikat ukończenia,
                 który potwierdzi Twoje umiejętności i pomoże w rozwoju

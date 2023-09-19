@@ -35,15 +35,15 @@ export default function Nav() {
         </div>
 
         <nav className={`${styles.navbar} grid`}>
-          <Link to='/kursy' className={styles.link}>
+          <NavLink to='/kursy' className={styles.link}>
             Szkolenia
-          </Link>
-          <Link to='/o-nas' className={styles.link}>
+          </NavLink>
+          <NavLink to='/o-nas' className={styles.link}>
             O nas
-          </Link>
-          <Link to='/kontakt' className={styles.link}>
+          </NavLink>
+          <NavLink to='/kontakt' className={styles.link}>
             Kontakt
-          </Link>
+          </NavLink>
         </nav>
 
         <Link to='/oferta' className={styles['oferta-link']}>
