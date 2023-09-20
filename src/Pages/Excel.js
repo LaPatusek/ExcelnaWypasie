@@ -1,0 +1,377 @@
+import { DirectDown, PlayCircle } from 'iconsax-react';
+import { Link } from 'react-router-dom';
+import Tick from '../Components/Elements/Tick';
+import styles from './Excel.module.css';
+
+export default function Excel() {
+  return (
+    <div className={styles.excel}>
+      <div className={styles['excel-header']}>
+        <h1>Poznaj Excel już dzisiaj!</h1>
+        <DirectDown size='44' color='#fff' variant='Bold' />
+      </div>
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+        <path
+          fill='#21a366'
+          fillOpacity='1'
+          d='M0,256L21.8,224C43.6,192,87,128,131,128C174.5,128,218,192,262,224C305.5,256,349,256,393,224C436.4,192,480,128,524,133.3C567.3,139,611,213,655,240C698.2,267,742,245,785,240C829.1,235,873,245,916,218.7C960,192,1004,128,1047,106.7C1090.9,85,1135,107,1178,138.7C1221.8,171,1265,213,1309,218.7C1352.7,224,1396,192,1418,176L1440,160L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z'
+        ></path>
+      </svg>
+
+      <div className={styles['video']}>
+        <h2>Tutaj będzie video/zdjęcie</h2>
+        <div className={styles.vid}>
+          <PlayCircle size='80' color='#fff' variant='Bulk' />
+        </div>
+      </div>
+
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+        className={styles['wave-spacer-flipped']}
+      >
+        <path
+          fill='#21a366'
+          fillOpacity='1'
+          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
+        ></path>
+      </svg>
+
+      <div className={`${styles.offer} grid`}>
+        <h2>Oferujemy kursy wysokiej jakości</h2>
+        <h3>
+          Dostosowane zarówno do początkujących, którzy chcą opanować podstawy
+          arkuszy kalkulacyjnych, jak i dla zaawansowanych użytkowników,
+          pragnących doskonalić swoje umiejętności w obszarze zaawansowanych
+          technik analizy danych i automatyzacji procesów.
+        </h3>
+      </div>
+
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+        className={styles['wave-spacer']}
+      >
+        <path
+          fill='#21a366'
+          fillOpacity='1'
+          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
+        ></path>
+      </svg>
+
+      <div className={styles['pakiety-wrap']}>
+        <h2>Poziomy</h2>
+        <h3 className={styles['sub-title']}>
+          Wybierz poziom, z którym zaczniesz kurs
+        </h3>
+        <div className={`${styles['pakiety']} grid`}>
+          <div className={`${styles['pakiety-container']} ${styles.brown}`}>
+            <h3>poziom 1</h3>
+            <h4>
+              Rozpocznij naukę Excela od podstaw i zdobądź pewność w tworzeniu
+              arkuszy kalkulacyjnych.
+            </h4>
+            <div className={`${styles.list} ${styles['brown-list']}`}>
+              <ol>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Tworzenie i zarządzanie arkuszami.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Formatowanie komórek: czcionka, kolor, pogrubienie, kursywa
+                  itp.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Używanie operacji matematycznych w formułach.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Praca grupowa - komentowanie
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Wprowadzenie do funkcji i formuł: składnia i zastosowanie na
+                  prostych przykładach.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Kopiowanie, wycinanie, wklejanie danych oraz korzystanie z
+                  opcji wklejania specjalnego.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Używanie podstawowych funkcji wbudowanych: SUMA, ŚREDNIA, MAX,
+                  MIN.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Wprowadzanie i formatowanie danych: tekst, liczby, daty,
+                  waluty.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Tworzenie i formatowanie tabel danych.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Automatyczne uzupełnianie danych.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Autouzupełnianie, adresowanie względne.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Sortowanie danych: rosnąco, malejąco.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Filtorwanie danych oraz filtrowanie wielopoziomowe.
+                </li>
+              </ol>
+            </div>
+            <h5>Cena zł</h5>
+            <button className={styles['buy-button']}>
+              <Link to='/excel-course'>Kup teraz</Link>
+            </button>
+          </div>
+
+          <div className={`${styles['pakiety-container']} ${styles.green}`}>
+            <h3>poziom 2</h3>
+            <h4>
+              Zyskaj dostęp do zaawansowanych kursów, aby opanować skomplikowane
+              formuły i analizować dane w Excelu.
+            </h4>
+            <div className={`${styles.list} ${styles['green-list']}`}>
+              <ol>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Adresowanie bezwzględne oraz mieszane.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Operacje na tekście, zmiana wielkości liter, łączenie oraz
+                  wyciąganie znaków.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Funkcje logiczne: JEŻELI, WIELR, ORAZ, LUB, NIE.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Funkcje łączące tekst, odczytujące określone fragmenty.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Grupowanie, filtrowanie i ukrywanie danych w tabelach
+                  przestawnych.
+                </li>
+
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Funkcja WYSZUKAJ.PIONOWO
+                </li>
+
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Funkcje warunkowe LICZ.JEŻELI, ILE.NIEPUSTYCH.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Tworzenie i zarządzanie tabelami przestawnymi.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Fukcje daty i czasu
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Tworzenie interaktywnych formularzy za pomocą kontrolek.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Zabezpieczanie komórek przed edycją: blokowanie i
+                  odblokowywanie.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Ustalanie haseł dla plików i arkuszy.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Wprowadzenie do systemu wizualizacji danych - wykresy.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Formatowanie warunkowe
+                </li>
+              </ol>
+            </div>
+
+            <div className={styles['start-container']}>
+              <h5>Cena zł</h5>
+              <button className={styles['buy-button']}>
+                <Link to='/excel-course'>Kup teraz</Link>
+              </button>
+            </div>
+          </div>
+
+          <div className={`${styles['pakiety-container']} ${styles.blue}`}>
+            <h3>poziom 3</h3>
+            <h4>
+              Stań się ekspertem Excela dzięki kursom programowania w VBA i
+              zaawansowanej analizy danych.
+            </h4>
+            <div className={`${styles.list} ${styles['blue-list']}`}>
+              <ol>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Operacje statystyczne
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Funckje finansowe
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Import / eksport danych do CSV, PDF
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Tworzenie interaktywnych dashboardów: łączenie różnych arkuszy
+                  i wykresów.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Wprowadzenie do makr: nagrywanie i edycja makr.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Wprowadzenie do języka VBA: edytor VBA, zmienne, pętle,
+                  instrukcje warunkowe.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Udostępnianie plików online za pomocą platformy chmurowej.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Tworzenie scenariuszy w oparciu o różne warianty kalkulacji.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Generowanie raportów.
+                </li>
+                <li>
+                  <i aria-hidden='true'>
+                    <Tick />
+                  </i>
+                  Analiza danych
+                </li>
+              </ol>
+            </div>
+            <div className={styles['start-container']}>
+              <h5>Cena zł</h5>
+              <button className={styles['buy-button']}>
+                <Link to='/excel-course'>Kup teraz</Link>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

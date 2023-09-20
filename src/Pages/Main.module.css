@@ -27,7 +27,6 @@
 }
 
 .left-section p {
-  /* color: #fff; */
   color: #0f4126;
   width: 482px;
   letter-spacing: 0.6px;
@@ -42,7 +41,6 @@
 .content {
   display: grid;
   justify-content: center;
-  /* color: #fff; */
   text-align: center;
   margin: 10px 0;
 }

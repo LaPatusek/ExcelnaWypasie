@@ -2,8 +2,10 @@ import { Fragment, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Cookies from './Components/Cookies/Cookies';
 import Footer from './Components/Footer/Footer';
+import ExcelNav from './Components/Nav/ExcelNav';
 import Nav from './Components/Nav/Nav';
 import About from './Pages/About';
+import Excel from './Pages/Excel';
 import Kontakt from './Pages/Kontakt';
 import Kursy from './Pages/Kursy';
 import Main from './Pages/Main';
@@ -28,9 +30,7 @@ function App() {
 
   return (
     <Fragment>
-      <header>
-        <Nav />
-      </header>
+      <header>{pathname !== '/excel-course' ? <Nav /> : <ExcelNav />}</header>
 
       <main>
         <Routes>
@@ -39,6 +39,7 @@ function App() {
           <Route path='/kursy' element={<Kursy />} />
           <Route path='/kontakt' element={<Kontakt />} />
           <Route path='/oferta' element={<Oferta />} />
+          <Route path='/excel-course' element={<Excel />} />
           <Route path='*' element={<Main />} />
         </Routes>
       </main>

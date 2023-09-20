@@ -51,8 +51,8 @@ export default function Oferta() {
           </h3>
           <p>
             Nasz zespół wsparcia jest gotowy do odpowiedzi na Twoje pytania i
-            rozwiązywania problemów, zapewniając Ci pomoc na każdym
-            etapie nauki.
+            rozwiązywania problemów, zapewniając Ci pomoc na każdym etapie
+            nauki.
           </p>
         </div>
 
@@ -218,12 +218,8 @@ export default function Oferta() {
             </div>
             <h5>Cena zł</h5>
             <button className={styles['buy-button']}>
-              Rozpocznij już teraz
+              <Link to='/excel-course'>Rozpocznij już teraz</Link>
             </button>
-
-            <Link to='/' className={styles['container-link']}>
-              Dowiedz się więcej
-            </Link>
           </div>
 
           <div className={`${styles['oferta-container']} ${styles.green}`}>
@@ -335,12 +331,8 @@ export default function Oferta() {
             <div className={styles['start-container']}>
               <h5>Cena zł</h5>
               <button className={styles['buy-button']}>
-                Rozpocznij już teraz
+                <Link to='/excel-course'>Rozpocznij już teraz</Link>
               </button>
-
-              <Link to='/' className={styles['container-link']}>
-                Dowiedz się więcej
-              </Link>
             </div>
           </div>
 
@@ -427,12 +419,8 @@ export default function Oferta() {
             <div className={styles['start-container']}>
               <h5>Cena zł</h5>
               <button className={styles['buy-button']}>
-                Rozpocznij już teraz
+                <Link to='/excel-course'>Rozpocznij już teraz</Link>
               </button>
-
-              <Link to='/' className={styles['container-link']}>
-                Dowiedz się więcej
-              </Link>
             </div>
           </div>
         </div>

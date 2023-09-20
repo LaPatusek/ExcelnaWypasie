@@ -1,0 +1,282 @@
+.excel-header {
+  background-color: var(--excel-light-green);
+  padding: 8rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.excel-header h1 {
+  color: white;
+  font-family: 'pou';
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  user-select: none;
+  margin-bottom: 70px;
+}
+
+.excel-header svg {
+  cursor: pointer;
+}
+
+.excel-header svg:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation-iteration-count: infinite;
+  transform: rotate(0deg);
+}
+
+@keyframes shake {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(3deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(-3deg);
+  }
+}
+
+.video {
+  padding: 1.5rem 4rem 0 4rem;
+}
+
+.video h2 {
+  font-family: 'Pou';
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--excel-dark-green);
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.vid {
+  display: grid;
+  background-color: var(--excel-green);
+  width: 50%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vid svg {
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.wave-spacer-flipped {
+  transform: rotate(180deg) translateY(-2rem);
+}
+
+.offer {
+  padding: 2rem;
+  background-color: var(--excel-light-green);
+  text-align: center;
+}
+
+.offer h2 {
+  font-family: 'Pou';
+  font-size: 40px;
+  margin-bottom: 15px;
+  user-select: none;
+  letter-spacing: 1px;
+}
+
+.offer h3 {
+  color: #1a1a1a;
+  font-size: 28px;
+  width: 60%;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  margin: 0 auto;
+}
+
+.pakiety-wrap {
+  padding: 4rem;
+}
+
+.pakiety-wrap h2 {
+  text-align: center;
+  font-family: 'Pou';
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: var(--excel-green);
+  user-select: none;
+}
+
+.sub-title {
+  text-align: center;
+  color: var(--excel-light-green);
+  user-select: none;
+  margin-bottom: 40px;
+  font-family: 'Pou';
+  font-size: 30px;
+}
+
+.pakiety {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+
+.pakiety-container {
+  position: relative;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.brown {
+  color: rgb(54, 45, 38);
+  background: rgb(87, 65, 50);
+  background: linear-gradient(
+    0.32deg,
+    rgba(141, 105, 80, 1) 0%,
+    rgba(186, 138, 105, 1) 100%
+  );
+}
+
+.brown a {
+  color: rgb(54, 45, 38);
+}
+
+.green {
+  color: rgb(20, 66, 42);
+  background: var(--excel-green);
+  background: linear-gradient(0.32deg, var(--excel-green) 0%, #33c481 100%);
+}
+
+.green a {
+  color: rgb(20, 66, 42);
+}
+
+.blue {
+  color: #11413e;
+  background: linear-gradient(
+    0.32deg,
+    rgba(26, 139, 133, 0.98) 0%,
+    rgba(96, 212, 206, 0.98) 100%
+  );
+}
+
+.blue a {
+  color: #11413e;
+}
+
+.pakiety-container h3 {
+  text-transform: uppercase;
+  font-family: 'Pou';
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.pakiety-container h4 {
+  color: #1a1a1a;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  margin-bottom: 25px;
+}
+
+.brown-list {
+  background-color: #c99671;
+  background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 98.8%, 0.3),
+      hsla(0, 0%, 98.8%, 0.15)
+    ),
+    hsla(0, 0%, 98.8%, 0.05);
+}
+
+.green-list {
+  background-color: var(--excel-light-green);
+  background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 98.8%, 0.3),
+      hsla(0, 0%, 98.8%, 0.15)
+    ),
+    hsla(0, 0%, 98.8%, 0.05);
+}
+
+.blue-list {
+  background-color: #0ff;
+  background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 98.8%, 0.3),
+      hsla(0, 0%, 98.8%, 0.15)
+    ),
+    hsla(0, 0%, 98.8%, 0.05);
+}
+
+.list {
+  border-radius: 20px;
+}
+
+.pakiety-container ol {
+  padding: 1rem;
+}
+
+.pakiety-container i {
+  margin-right: 8px;
+}
+
+.pakiety-container svg {
+  transform: translateY(-2px);
+}
+
+.pakiety-container li {
+  margin: 7px 0;
+  color: #1a1a1a;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 19px;
+  display: flex;
+  width: 90%;
+}
+
+.start-container {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+}
+
+.container-link {
+  text-align: center;
+  display: block;
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.pakiety-container h5 {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  font-size: 32px;
+  font-family: 'Pou';
+}
+
+.buy-button {
+  display: block;
+  background-color: var(--white-text);
+  width: 80%;
+  padding: 15px 0;
+  font-weight: bold;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: all 0.4s;
+}
+
+.buy-button:hover {
+  filter: brightness(1.1);
+}
