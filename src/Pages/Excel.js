@@ -1,5 +1,6 @@
 import { DirectDown, PlayCircle } from 'iconsax-react';
 import { Link } from 'react-router-dom';
+import instructor from '../Components/Assets/Eryk.webp';
 import Tick from '../Components/Elements/Tick';
 import styles from './Excel.module.css';
 
@@ -8,9 +9,11 @@ export default function Excel() {
     <div className={styles.excel}>
       <div className={styles['excel-header']}>
         <h1>Poznaj Excel już dzisiaj!</h1>
-        <DirectDown size='44' color='#fff' variant='Bold' />
+        <Link to={'/excel-course#pakiety'}>
+          <DirectDown size='44' color='#fff' variant='Bold' />
+        </Link>
       </div>
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' className={styles['header-wave']}>
         <path
           fill='#21a366'
           fillOpacity='1'
@@ -25,41 +28,7 @@ export default function Excel() {
         </div>
       </div>
 
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 1440 320'
-        className={styles['wave-spacer-flipped']}
-      >
-        <path
-          fill='#21a366'
-          fillOpacity='1'
-          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
-        ></path>
-      </svg>
-
-      <div className={`${styles.offer} grid`}>
-        <h2>Oferujemy kursy wysokiej jakości</h2>
-        <h3>
-          Dostosowane zarówno do początkujących, którzy chcą opanować podstawy
-          arkuszy kalkulacyjnych, jak i dla zaawansowanych użytkowników,
-          pragnących doskonalić swoje umiejętności w obszarze zaawansowanych
-          technik analizy danych i automatyzacji procesów.
-        </h3>
-      </div>
-
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 1440 320'
-        className={styles['wave-spacer']}
-      >
-        <path
-          fill='#21a366'
-          fillOpacity='1'
-          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
-        ></path>
-      </svg>
-
-      <div className={styles['pakiety-wrap']}>
+      <div className={styles['pakiety-wrap']} id='pakiety'>
         <h2>Poziomy</h2>
         <h3 className={styles['sub-title']}>
           Wybierz poziom, z którym zaczniesz kurs
@@ -370,6 +339,177 @@ export default function Excel() {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+        className={styles['wave-spacer-flipped']}
+      >
+        <path
+          fill='#21a366'
+          fillOpacity='1'
+          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
+        ></path>
+      </svg>
+
+      <div className={`${styles.offer} grid`}>
+        <h2>Oferujemy kursy wysokiej jakości</h2>
+        <h3>
+          Dostosowane zarówno do początkujących, którzy chcą opanować podstawy
+          arkuszy kalkulacyjnych, jak i dla zaawansowanych użytkowników,
+          pragnących doskonalić swoje umiejętności w obszarze zaawansowanych
+          technik analizy danych i automatyzacji procesów.
+        </h3>
+      </div>
+
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+        className={styles['wave-spacer']}
+      >
+        <path
+          fill='#21a366'
+          fillOpacity='1'
+          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
+        ></path>
+      </svg>
+
+      <div className={styles.preview}>
+        <h3>Program kursu</h3>
+        <div className={styles.program}>
+          <h4 className={styles['brown-program--header']}>Początek</h4>
+          <ol className={styles['brown-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>Witaj!</span>
+                <div className={styles['li-button']}>Zobacz</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>Witaj!</span>
+                <div className={styles['li-button']}>Zobacz</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>Witaj!</span>
+                <div className={styles['li-button']}>Zobacz</div>
+              </Link>
+            </li>
+          </ol>
+
+          <h4 className={styles['brown-program--header']}>Poziom 1</h4>
+          <ol className={styles['brown-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+          </ol>
+
+          <h4 className={styles['green-program--header']}>Poziom 2</h4>
+          <ol className={styles['green-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+          </ol>
+
+          <h4 className={styles['blue-program--header']}>Poziom 3</h4>
+          <ol className={styles['blue-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div className={styles['instruktor-wrap']}>
+        <h4>Twój instruktor</h4>
+        <div className={`${styles.instruktor} grid`}>
+          <div className={styles['instruktor-image']}>
+            <img
+              src={instructor}
+              width={'150px'}
+              height={'150px'}
+              alt='Instruktor kursów Excel'
+            />
+            <h5>Eryk Trojanowski</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            dignissim nulla ut massa scelerisque condimentum. Ut sit amet luctus
+            neque. Vestibulum ullamcorper quam vel magna dictum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Nulla dignissim nulla
+            ut massa scelerisque condimentum. Ut sit amet luctus neque.
+            Vestibulum ullamcorper quam vel magna dictum
+          </p>
         </div>
       </div>
     </div>
