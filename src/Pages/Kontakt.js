@@ -78,7 +78,7 @@ const Kontakt = () => {
         <h2>Kontakt</h2>
         <section className={`${styles['first-section']} grid`}>
           <div className={styles.container}>
-            <Location variant='Bold' size='40px' /> <h3>Adres</h3>
+            <Location variant='Bold' size='40px' color='#f1f1f1'/> <h3>Adres</h3>
             <p>
               Excel Na Wypasie
               <br /> Selenbit Eryk Trojanowski
@@ -87,7 +87,7 @@ const Kontakt = () => {
             </p>
           </div>
           <div className={styles.container}>
-            <Call variant='Bold' size='40px' /> <h3>Telefon</h3>{' '}
+            <Call variant='Bold' size='40px' color='#f1f1f1'/> <h3>Telefon</h3>{' '}
             <p> +48 531 771 944</p>
           </div>
           <div className={styles.container}>
@@ -95,7 +95,7 @@ const Kontakt = () => {
               xmlns='http://www.w3.org/2000/svg'
               width='40'
               height='40'
-              fill='#1a1a1a'
+              fill='#f1f1f1'
               viewBox='0 0 512 512'
             >
               <path d='M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z' />
@@ -119,7 +119,7 @@ const Kontakt = () => {
           className={styles['flipped-wave']}
         >
           <path
-            fill='#ded6c9'
+            fill='#f1f1f1'
             fillOpacity='1'
             d='M0,256L21.8,224C43.6,192,87,128,131,128C174.5,128,218,192,262,224C305.5,256,349,256,393,224C436.4,192,480,128,524,133.3C567.3,139,611,213,655,240C698.2,267,742,245,785,240C829.1,235,873,245,916,218.7C960,192,1004,128,1047,106.7C1090.9,85,1135,107,1178,138.7C1221.8,171,1265,213,1309,218.7C1352.7,224,1396,192,1418,176L1440,160L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z'
           ></path>

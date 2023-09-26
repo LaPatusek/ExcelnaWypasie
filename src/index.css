@@ -17,7 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(204, 194, 178);
+  background-color: #f1f1f1;
 }
 
 code {
@@ -29,7 +29,7 @@ code {
   font-family: 'Pou';
   font-style: normal;
   font-weight: 400;
-  src: url(./Components/Assets/Pou.ttf) format('truetype');
+  src: url(./Components/Assets/Qatar2022-Medium.otf) format('truetype');
   font-display: swap;
 }
 

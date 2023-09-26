@@ -12,14 +12,13 @@
 .about-header h1 {
   width: fit-content;
   font-family: 'Pou';
-  font-size: 52px;
+  font-weight: bold;
+  font-size: 54px;
   text-align: center;
-  line-height: 56px;
   letter-spacing: 1px;
   user-select: none;
   margin: 0 auto 2rem auto;
   color: var(--excel-text-green);
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .about-header h2 {
@@ -55,12 +54,12 @@
 
 .newsletter h3 {
   font-family: 'Pou';
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 1px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  color: var(--excel-text-green);
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #f1f1f1;
+  font-weight: bold;
 }
 
 .newsletter p {
@@ -89,7 +88,7 @@
 }
 
 .newsletter button {
-  padding: 5px 10px;
+  padding: 7px 10px 5px 10px;
   font-family: 'Pou';
   text-transform: uppercase;
   font-weight: bold;
@@ -97,14 +96,13 @@
   background-color: var(--excel-light-green);
   border: 2px solid transparent;
   border-radius: 10px;
-  color: white;
+  color: #f1f1f1;
   cursor: pointer;
   transition: all 0.4s;
 }
 
 .newsletter button:hover {
-  border: 2px solid var(--excel-light-green);
-  color: var(--excel-light-green);
+  border: 2px solid #f1f1f1;
   background-color: transparent;
 }
 
@@ -116,10 +114,10 @@
 .faq h3 {
   text-align: center;
   font-family: 'Pou';
-  font-size: 34px;
+  font-size: 38px;
+  font-weight: bold;
   letter-spacing: 1px;
   color: var(--excel-text-green);
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   text-transform: uppercase;
   padding-bottom: 2rem;
   width: fit-content;

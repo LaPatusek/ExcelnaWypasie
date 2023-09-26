@@ -12,6 +12,7 @@
   letter-spacing: 1px;
   padding-bottom: 100px;
   user-select: none;
+  color: #f1f1f1;
 }
 
 .title h3 {
@@ -21,14 +22,14 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: 'Pou';
-  color: #000;
+  color: #f1f1f1;
   user-select: none;
 }
 
 .title p {
   font-weight: bold;
   letter-spacing: 0.5px;
-  color: #1a1a1a;
+  color: #e0e0e0;
 }
 
 .first-section {
@@ -42,7 +43,7 @@
 }
 
 .container a {
-  color: #1a1a1a;
+  color: #e0e0e0;
   text-decoration: underline;
 }
 
@@ -51,7 +52,7 @@
 }
 
 .kontakt {
-  background-color: var(--white-text);
+  background-color: #f1f1f1;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
 }
@@ -69,8 +70,10 @@
 .left-section h3 {
   color: var(--excel-green);
   font-family: 'Pou';
-  margin: 30px 0 50px 0;
-  font-size: 33px;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  margin: 30px 0 40px 0;
 }
 
 .left-section p {
@@ -86,9 +89,10 @@
 
 .right-section h4 {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  font-size: 26px;
+  font-family: 'Pou';
+  color: var(--excel-dark-green);
+  letter-spacing: 0.6px;
   margin-bottom: 30px;
   width: 90%;
 }

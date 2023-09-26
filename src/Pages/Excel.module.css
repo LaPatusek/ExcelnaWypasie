@@ -302,6 +302,8 @@
   font-weight: bold;
   font-size: 20px;
   font-family: 'Pou';
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   user-select: none;
 }
 
@@ -442,6 +444,7 @@
   letter-spacing: 0.5px;
   font-size: 20px;
   align-self: center;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -484,7 +487,7 @@
   .video {
     padding: 1.5rem 0rem 0 0rem;
   }
-  
+
   .vid {
     width: 90%;
   }
@@ -507,7 +510,7 @@
   }
 
   .offer {
-    padding: 2rem .5rem;
+    padding: 2rem 0.5rem;
   }
 
   .offer h3 {

@@ -12,6 +12,7 @@
   font-weight: bold;
   text-transform: uppercase;
   user-select: none;
+  color: #f1f1f1;
 }
 
 .oferta-header h2 {
@@ -21,7 +22,7 @@
   letter-spacing: 0.7px;
   line-height: 38px;
   font-weight: bold;
-  color: #1a1a1a;
+  color: #e0e0e0;
   user-select: none;
 }
 
@@ -49,12 +50,12 @@
 }
 
 .zalety-container h3 {
-  color: white;
+  color: #f1f1f1;
   font-family: 'Pou';
   font-weight: bold;
-  font-size: 28px;
+  font-size: 30px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-align: center;
   margin-bottom: 10px;
   user-select: none;
@@ -68,12 +69,12 @@
 }
 
 .flipped-wave {
-  background-color: var(--white-text);
+  background-color: #f1f1f1;
   padding-bottom: 10px;
 }
 
 .oferta-wrap {
-  background-color: var(--white-text);
+  background-color: #f1f1f1;
   padding: 4rem;
 }
 
@@ -82,7 +83,6 @@
   font-family: 'Pou';
   text-transform: uppercase;
   font-size: 50px;
-  letter-spacing: 1px;
   color: var(--excel-green);
   user-select: none;
 }
@@ -91,6 +91,7 @@
   text-align: center;
   color: var(--excel-light-green);
   user-select: none;
+  letter-spacing: 0.5px;
   margin-bottom: 40px;
   font-family: 'Pou';
   font-size: 30px;
@@ -265,8 +266,7 @@
   text-align: center;
   margin-top: 40px;
   font-weight: bold;
-  letter-spacing: 0.6px;
-  font-size: 32px;
+  font-size: 34px;
   font-family: 'Pou';
 }
 
@@ -275,9 +275,6 @@
   background-color: var(--white-text);
   width: 80%;
   padding: 15px 0;
-  font-weight: bold;
-  color: #1a1a1a;
-  letter-spacing: 0.5px;
   border-radius: 20px;
   cursor: pointer;
   margin: 20px auto;
@@ -286,6 +283,14 @@
 
 .buy-button:hover {
   filter: brightness(1.1);
+}
+
+.buy-button a {
+  font-family: 'Pou';
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
 }
 
 .white-spacer-800 {

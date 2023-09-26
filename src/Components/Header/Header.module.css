@@ -23,9 +23,10 @@
 .text h1 {
   font-size: 44px;
   color: var(--white-text);
+  font-family: "Pou";
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   line-height: 50px;
   user-select: none;
   margin-bottom: 10px;

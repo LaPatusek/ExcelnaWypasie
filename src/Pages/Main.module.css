@@ -18,12 +18,11 @@
 
 .left-section h1 {
   color: var(--excel-text-green);
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  font-size: 38px;
+  font-size: 40px;
   font-family: 'Pou';
-  letter-spacing: 0.7px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
   margin-bottom: 5px;
-  place-self: center;
 }
 
 .left-section p {
@@ -51,10 +50,10 @@
 }
 
 .content h2 {
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 0.8px;
   font-family: 'Pou';
-  line-height: 30px;
+  line-height: 32px;
   user-select: none;
   font-weight: bold;
   color: var(--excel-green);
@@ -110,8 +109,8 @@
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
+  border-top: 0.125rem solid #f1f1f1;
+  border-right: 0.125rem solid #f1f1f1;
   transform: rotate(45deg);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 }
@@ -139,12 +138,12 @@
 }
 
 .learn-more-button:hover .circle .icon.arrow {
-  background: #fff;
+  background: #f1f1f1;
   transform: translate(1rem, 0);
 }
 
 .learn-more-button:hover .button-text {
-  color: #fff;
+  color: #f1f1f1;
 }
 
 .wave-spacer-flipped {
@@ -195,11 +194,11 @@
 .about h3 {
   font-size: 40px;
   font-family: 'Pou';
+  font-weight: bold;
   text-align: center;
   letter-spacing: 1px;
   user-select: none;
   color: var(--excel-text-green);
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .about-container {
