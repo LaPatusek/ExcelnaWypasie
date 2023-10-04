@@ -293,8 +293,169 @@
   color: #1a1a1a;
 }
 
-.white-spacer-800 {
-  display: none;
+.preview {
+  padding: 0 4rem 2rem 4rem;
+  width: 70%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview h3 {
+  font-family: 'Pou';
+  letter-spacing: 0.8px;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.program h4 {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Pou';
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+.brown-program--header {
+  color: rgb(54, 45, 38);
+  background: rgba(141, 105, 80, 1);
+}
+
+.blue-program--header {
+  color: #11413e;
+  background: rgba(26, 139, 133, 0.98);
+}
+
+.green-program--header {
+  color: rgb(20, 66, 42);
+  background-color: var(--excel-green);
+}
+
+.program li {
+  margin: 2px 0;
+  width: 100%;
+  display: grid;
+  transition: all 0.4s;
+}
+
+.brown-program li {
+  background-color: rgba(186, 138, 105, 1);
+}
+
+.green-program li {
+  background: var(--excel-light-green);
+}
+
+.blue-program li {
+  background: rgba(84, 184, 179, 0.9);
+}
+
+.program li > a {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.brown-program li > a {
+  color: rgb(54, 46, 39);
+}
+
+.green-program li > a {
+  color: rgb(20, 66, 42);
+}
+
+.blue-program li > a {
+  color: #11413e;
+}
+
+.program a > span {
+  align-self: center;
+}
+
+.brown-program li:hover {
+  background-color: rgba(186, 138, 105, 0.8);
+}
+
+.green-program li:hover {
+  background: rgba(33, 163, 102, 0.8);
+}
+
+.blue-program li:hover {
+  background: rgba(84, 184, 179, 0.7);
+}
+
+.li-button {
+  align-self: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 98.8%, 0.3),
+      hsla(0, 0%, 98.8%, 0.15)
+    ),
+    hsla(0, 0%, 98.8%, 0.05);
+}
+
+.li-button:hover {
+  background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 98.8%, 0.3),
+      hsla(0, 0%, 98.8%, 0.15)
+    ),
+    hsla(0, 0%, 98.8%, 0.4);
+}
+
+.instruktor-wrap {
+  padding: 2rem 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.instruktor-wrap h4 {
+  font-family: 'pou';
+  font-size: 32px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.instruktor {
+  grid-template-columns: 175px calc(90% - 175px);
+}
+
+.instruktor-image {
+  width: 175px;
+}
+
+.instruktor-image img {
+  width: 175px;
+  height: 175px;
+  border-radius: 100%;
+}
+
+.instruktor-image h5 {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.instruktor p {
+  padding-left: 40px;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  align-self: center;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -320,46 +481,63 @@
 @media screen and (max-width: 900px) {
   .oferta-header {
     transform: translateY(-2px);
+    padding: 2rem 1.5rem;
   }
 
-  .flipped-wave-first,
-  .flipped-wave,
+  .flipped-wave-first {
+    transform: translateY(-6px);
+  }
+
   .zalety {
-    transform: translateY(-5px);
+    padding: 4rem;
+    transform: translateY(-8px);
+  }
+
+  .flipped-wave {
+    transform: translateY(-9px);
   }
 
   .oferta-wrap {
-    transform: translateY(-6px);
+    padding: 4rem 1.5rem;
   }
 
   .zalety {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .oferta-wrap {
-    padding: 4rem 2rem;
-  }
-
   .oferta-container {
     width: 100%;
   }
 
-  .white-spacer-800 {
-    display: block;
-    position: relative;
-    height: 30px;
+  .preview {
     width: 100%;
-    background-color: var(--white-text);
-    transform: translateY(-8px);
+    padding: 0 2rem 2rem 2rem;
   }
 
-  .white-spacer-800::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -8px;
+  .preview h3 {
+    text-align: center;
+  }
+
+  .instruktor-wrap {
     width: 100%;
-    height: 10px;
-    background-color: var(--white-text);
+  }
+
+  .instruktor-wrap h4 {
+    text-align: center;
+  }
+
+  .instruktor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .instruktor-image {
+    justify-self: center;
+  }
+
+  .instruktor p {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding-left: 0;
+    text-align: center;
   }
 }

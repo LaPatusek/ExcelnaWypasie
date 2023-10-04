@@ -1,6 +1,7 @@
 import { Calendar1, CalendarAdd, Clock, People } from 'iconsax-react';
 import { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
+import instructor from '../Components/Assets/Eryk.webp';
 import Tick from '../Components/Elements/Tick';
 import styles from './Oferta.module.css';
 
@@ -426,7 +427,142 @@ export default function Oferta() {
         </div>
       </div>
 
-      <div className={styles['white-spacer-800']} />
+      <div className={styles.preview}>
+        <h3>Program kursu</h3>
+        <div className={styles.program}>
+          <h4 className={styles['brown-program--header']}>Początek</h4>
+          <ol className={styles['brown-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>Witaj!</span>
+                <div className={styles['li-button']}>Zobacz</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>Witaj!</span>
+                <div className={styles['li-button']}>Zobacz</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>Witaj!</span>
+                <div className={styles['li-button']}>Zobacz</div>
+              </Link>
+            </li>
+          </ol>
+
+          <h4 className={styles['brown-program--header']}>Poziom 1</h4>
+          <ol className={styles['brown-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+          </ol>
+
+          <h4 className={styles['green-program--header']}>Poziom 2</h4>
+          <ol className={styles['green-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+          </ol>
+
+          <h4 className={styles['blue-program--header']}>Poziom 3</h4>
+          <ol className={styles['blue-program']}>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                  pasek formuł.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+            <li>
+              <Link to='/excel-course/program/witaj'>
+                <span>
+                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+                </span>
+                <div className={styles['li-button']}>Start</div>
+              </Link>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div className={styles['instruktor-wrap']}>
+        <h4>Twój instruktor</h4>
+        <div className={`${styles.instruktor} grid`}>
+          <div className={styles['instruktor-image']}>
+            <img
+              src={instructor}
+              width={'150px'}
+              height={'150px'}
+              alt='Instruktor kursów Excel'
+            />
+            <h5>Eryk Trojanowski</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            dignissim nulla ut massa scelerisque condimentum. Ut sit amet luctus
+            neque. Vestibulum ullamcorper quam vel magna dictum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Nulla dignissim nulla
+            ut massa scelerisque condimentum. Ut sit amet luctus neque.
+            Vestibulum ullamcorper quam vel magna dictum
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
