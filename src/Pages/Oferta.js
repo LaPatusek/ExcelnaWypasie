@@ -427,6 +427,40 @@ export default function Oferta() {
         </div>
       </div>
 
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+        className={styles['wave-spacer-flipped']}
+      >
+        <path
+          fill='#21a366'
+          fillOpacity='1'
+          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
+        ></path>
+      </svg>
+
+      <div className={`${styles.offer} grid`}>
+        <h2>Oferujemy kursy wysokiej jakości</h2>
+        <h3>
+          Dostosowane zarówno do początkujących, którzy chcą opanować podstawy
+          arkuszy kalkulacyjnych, jak i dla zaawansowanych użytkowników,
+          pragnących doskonalić swoje umiejętności w obszarze zaawansowanych
+          technik analizy danych i automatyzacji procesów.
+        </h3>
+      </div>
+
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1440 320'
+        className={styles['wave-spacer']}
+      >
+        <path
+          fill='#21a366'
+          fillOpacity='1'
+          d='M0,128L60,112C120,96,240,64,360,53.3C480,43,600,53,720,74.7C840,96,960,128,1080,138.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'
+        ></path>
+      </svg>
+
       <div className={styles.preview}>
         <h3>Program kursu</h3>
         <div className={styles.program}>

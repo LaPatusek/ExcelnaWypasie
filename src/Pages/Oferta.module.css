@@ -32,7 +32,7 @@
 
 .zalety {
   background-color: #8d6950;
-  padding: 6rem 4rem;
+  padding: 2rem 4rem;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
@@ -69,13 +69,11 @@
 }
 
 .flipped-wave {
-  background-color: #f1f1f1;
   padding-bottom: 10px;
 }
 
 .oferta-wrap {
-  background-color: #f1f1f1;
-  padding: 4rem;
+  padding: 2rem 4rem 0 4rem;
 }
 
 .oferta-wrap h2 {
@@ -293,6 +291,33 @@
   color: #1a1a1a;
 }
 
+.wave-spacer-flipped {
+  transform: rotate(180deg) translateY(-2rem);
+}
+
+.offer {
+  padding: 2rem;
+  background-color: var(--excel-light-green);
+  text-align: center;
+}
+
+.offer h2 {
+  font-family: 'Pou';
+  font-size: 40px;
+  margin-bottom: 15px;
+  user-select: none;
+  letter-spacing: 1px;
+}
+
+.offer h3 {
+  color: #1a1a1a;
+  font-size: 28px;
+  width: 60%;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  margin: 0 auto;
+}
+
 .preview {
   padding: 0 4rem 2rem 4rem;
   width: 70%;
@@ -507,6 +532,20 @@
 
   .oferta-container {
     width: 100%;
+  }
+
+  .wave-spacer-flipped {
+    transform: rotate(180deg) translateY(-4px);
+  }
+
+  .offer {
+    padding: 2rem 0.5rem;
+  }
+
+  .offer h3 {
+    width: 80%;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .preview {
