@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { Call, Location, TickCircle } from 'iconsax-react';
 import { Fragment, useRef, useState } from 'react';
 import useInput from '../Components/hooks/useInput';
@@ -56,6 +57,22 @@ const Kontakt = () => {
       return;
     }
 
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SMTP_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+
     setFormIsSent(true);
     nameReset();
     topicReset();
@@ -78,7 +95,8 @@ const Kontakt = () => {
         <h2>Kontakt</h2>
         <section className={`${styles['first-section']} grid`}>
           <div className={styles.container}>
-            <Location variant='Bold' size='40px' color='#f1f1f1'/> <h3>Adres</h3>
+            <Location variant='Bold' size='40px' color='#f1f1f1' />{' '}
+            <h3>Adres</h3>
             <p>
               Excel Na Wypasie
               <br /> Selenbit Eryk Trojanowski
@@ -87,7 +105,7 @@ const Kontakt = () => {
             </p>
           </div>
           <div className={styles.container}>
-            <Call variant='Bold' size='40px' color='#f1f1f1'/> <h3>Telefon</h3>{' '}
+            <Call variant='Bold' size='40px' color='#f1f1f1' /> <h3>Telefon</h3>{' '}
             <p> +48 531 771 944</p>
           </div>
           <div className={styles.container}>
