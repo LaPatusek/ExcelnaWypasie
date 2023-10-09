@@ -588,12 +588,10 @@ export default function Oferta() {
             <h5>Eryk Trojanowski</h5>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            dignissim nulla ut massa scelerisque condimentum. Ut sit amet luctus
-            neque. Vestibulum ullamcorper quam vel magna dictum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Nulla dignissim nulla
-            ut massa scelerisque condimentum. Ut sit amet luctus neque.
-            Vestibulum ullamcorper quam vel magna dictum
+            Przez ponad <span className={styles.highlight}> dekadę </span> nieprzerwanie dostarcza wysokiej jakości
+            szkolenia i wsparcie dla szerokiej gamy klientów. Jego pasja do
+            nauczania oraz umiejętność przekazywania wiedzy uczyniły go jednym z
+            najbardziej poszukiwanych ekspertów w swojej dziedzinie.
           </p>
         </div>
       </div>
