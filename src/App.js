@@ -1,4 +1,5 @@
 import { Fragment, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Cookies from './Components/Cookies/Cookies';
 import Footer from './Components/Footer/Footer';
@@ -8,6 +9,10 @@ import Kontakt from './Pages/Kontakt';
 import Kursy from './Pages/Kursy';
 import Main from './Pages/Main';
 import Oferta from './Pages/Oferta';
+
+const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
+
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -25,6 +30,12 @@ function App() {
       }, 0);
     }
   }, [pathname, hash, key]);
+
+  ReactGA.send({
+    hitType: 'pageview',
+    page: window.location.hash,
+    title: window.location.hash,
+  });
 
   return (
     <Fragment>
