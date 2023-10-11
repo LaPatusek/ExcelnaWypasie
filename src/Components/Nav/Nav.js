@@ -29,7 +29,7 @@ export default function Nav() {
               src={logo}
               alt='Excel na Wypasie'
               width={'150px'}
-              height={'auto'}
+              height={'180.766px'}
             />
           </Link>
         </div>
@@ -58,7 +58,7 @@ export default function Nav() {
               src={logo}
               alt='Excel na Wypasie'
               width={'150px'}
-              height={'auto'}
+              height={'180.766px'}
             />
           </Link>
         </div>

@@ -148,6 +148,17 @@
     padding-bottom: 0rem;
   }
 
+  .link {
+    font-size: 23px;
+    margin-bottom: 3px;
+  }
+
+  .link svg {
+    width: 23px;
+    height: 23px;
+    transform: translateY(4px);
+  }
+
   .newsletter h3,
   .newsletter h2 {
     text-align: center;

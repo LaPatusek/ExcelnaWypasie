@@ -11,7 +11,7 @@
 
 .logo img {
   width: 150px;
-  height: auto;
+  height: 180.766px;
 }
 
 .navbar {
@@ -57,6 +57,7 @@
   width: fit-content;
   align-self: center;
   justify-self: right;
+  text-align: center;
 }
 
 .oferta-link:hover {
@@ -86,7 +87,7 @@
 
   .logo-800 img {
     width: 150px;
-    height: auto;
+    height: 180.766px;
   }
 
   .hamburger-menu {
