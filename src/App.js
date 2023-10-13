@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from 'react';
 import ReactGA from 'react-ga4';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Cookies from './Components/Cookies/Cookies';
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
@@ -45,12 +45,12 @@ function App() {
 
       <main>
         <Routes>
-          <Route path='/' element={<Main />} />
+          <Route exact path='/' element={<Main />} />
           <Route path='/o-nas' element={<About />} />
           <Route path='/kursy' element={<Kursy />} />
           <Route path='/kontakt' element={<Kontakt />} />
           <Route path='/oferta' element={<Oferta />} />
-          <Route path='*' element={<Main />} />
+          <Route path='*' element={<Navigate to='/' />} />
         </Routes>
       </main>
 
