@@ -1,11 +1,55 @@
-import { ArrowRight3, Copyright, Location } from 'iconsax-react';
+import emailjs from '@emailjs/browser';
+import { ArrowRight3, Copyright, Heart, Location } from 'iconsax-react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useInput from '../hooks/useInput';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  const [formSent, setFormSent] = useState(false);
+  const newsletterRef = useRef();
+
+  const {
+    value: enteredNews,
+    isValid: newsIsValid,
+    valueChangeHandler: newsChangeHandler,
+    inputBlurHandler: newsBlurHandler,
+    hasError: newsHasError,
+    reset: newsReset,
+  } = useInput((value) => value.trim().includes('@'));
+
   const newsletterFunction = (e) => {
     e.preventDefault();
+
+    if (!newsIsValid) {
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SMTP_ID,
+        process.env.REACT_APP_NEWS_ID,
+        newsletterRef.current,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+
+    newsReset();
+    setFormSent(true);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setFormSent(false);
+    }, 15000);
+  }, [formSent]);
 
   return (
     <div className={styles.footer}>
@@ -62,17 +106,36 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles['newsletter']}>
+        <div
+          className={`${styles['newsletter']} ${
+            newsHasError ? styles.error : ''
+          }`}
+        >
           <h2>Zapisz się do naszego newslettera</h2>
           <h3>Bądź na bieżąco z aktualizacjami kursu, artykułami, itd.</h3>
-          <form onSubmit={newsletterFunction}>
+          <form onSubmit={newsletterFunction} ref={newsletterRef}>
             <input
               type='email'
+              name='user_email'
               placeholder='Wpisz swój adres e-mail'
               id='newsletter'
+              value={enteredNews}
+              onBlur={newsBlurHandler}
+              onChange={newsChangeHandler}
             />{' '}
             <button> Zapisz się</button>
           </form>
+
+          {formSent && (
+            <p>
+              {' '}
+              Dziękujemy! <Heart
+                variant='Bold'
+                size='22px'
+                color='#f1f1f1'
+              />{' '}
+            </p>
+          )}
         </div>
       </div>
 

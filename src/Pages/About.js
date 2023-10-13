@@ -1,15 +1,58 @@
-import { ArrowRight2 } from 'iconsax-react';
-import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { ArrowRight2, Heart } from 'iconsax-react';
+import { useEffect, useRef, useState } from 'react';
 import meeting from '../Components/Assets/meeting.webp';
+import useInput from '../Components/hooks/useInput';
 import faq from '../json/faq.json';
 import styles from './About.module.css';
 
 export default function About() {
   const [activeBlock, setActiveBlock] = useState([]);
+  const [formSent, setFormSent] = useState(false);
+  const newsletterRef = useRef();
+
+  const {
+    value: enteredNews,
+    isValid: newsIsValid,
+    valueChangeHandler: newsChangeHandler,
+    inputBlurHandler: newsBlurHandler,
+    hasError: newsHasError,
+    reset: newsReset,
+  } = useInput((value) => value.trim().includes('@'));
 
   const newsletterFunction = (e) => {
     e.preventDefault();
+
+    if (!newsIsValid) {
+      console.log('hybydyż');
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SMTP_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        newsletterRef.current,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+
+    newsReset();
+    setFormSent(true);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setFormSent(false);
+    }, 15000);
+  }, [formSent]);
 
   const questionFunction = (index) => {
     setActiveBlock((prevBlocks) => {
@@ -61,20 +104,33 @@ export default function About() {
         ></path>
       </svg>
 
-      <div className={styles['newsletter']}>
+      <div
+        className={`${styles['newsletter']} ${
+          newsHasError ? styles.error : ''
+        }`}
+      >
         <h3>Zapisz się do naszego newslettera</h3>
-        <p>
+        <h4>
           Bez spamu. Dołącz do naszej społeczności, gdzie dostaniesz dostęp do
           najnowszych aktualizacji.
-        </p>
-        <form onSubmit={newsletterFunction}>
+        </h4>
+        <form onSubmit={newsletterFunction} ref={newsletterRef}>
           <input
+            name='user_email'
             type='email'
             placeholder='Wpisz swój adres e-mail'
             id='newsletter'
+            value={enteredNews}
+            onChange={newsChangeHandler}
+            onBlur={newsBlurHandler}
           />
           <button>Zapisz się</button>
         </form>
+        {formSent && (
+          <p>
+            Dziękujemy za zaufanie! <Heart variant='Bold' />
+          </p>
+        )}
       </div>
 
       <svg

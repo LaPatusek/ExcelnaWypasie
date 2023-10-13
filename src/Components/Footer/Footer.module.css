@@ -42,9 +42,17 @@
   border: 2px solid var(--excel-dark-green);
 }
 
+.error input {
+  border: 2px solid rgb(219, 18, 18);
+}
+
 .newsletter input::placeholder {
   color: var(--excel-dark-green);
   font-weight: bold;
+}
+
+.error input::placeholder {
+  color: rgb(173, 39, 39);
 }
 
 .newsletter button {
@@ -64,6 +72,19 @@
 .newsletter button:hover {
   background-color: transparent;
   border: 1px solid #f1f1f1;
+}
+
+.newsletter p {
+  margin-top: 5px;
+  margin-left: 8px;
+  color: #f1f1f1;
+  letter-spacing: 0.6px;
+  font-size: 22px;
+  font-family: 'Pou';
+}
+
+.newsletter svg {
+  transform: translateY(3px);
 }
 
 .mail,

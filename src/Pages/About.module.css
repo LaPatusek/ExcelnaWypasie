@@ -45,6 +45,7 @@
 }
 
 .newsletter {
+  position: relative;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -62,11 +63,26 @@
   font-weight: bold;
 }
 
-.newsletter p {
+.newsletter h4 {
   font-weight: bold;
   letter-spacing: 0.5px;
   color: #1a1a1a;
   padding-bottom: 10px;
+}
+
+.newsletter p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  color: #f1f1f1;
+  font-family: 'Pou';
+  font-size: 22px;
+  letter-spacing: 0.6px;
+}
+
+.newsletter svg {
+  transform: translateY(3px);
 }
 
 .newsletter input {
@@ -82,9 +98,17 @@
   border: 2px solid var(--excel-light-green);
 }
 
+.error input {
+  border: 2px solid rgb(219, 18, 18);
+}
+
 .newsletter input::placeholder {
   letter-spacing: 0.5px;
   color: var(--excel-dark-green);
+}
+
+.error input::placeholder {
+  color: rgb(173, 39, 39);
 }
 
 .newsletter button {
