@@ -24,7 +24,6 @@ export default function About() {
     e.preventDefault();
 
     if (!newsIsValid) {
-      console.log('hybydyż');
       return;
     }
 
