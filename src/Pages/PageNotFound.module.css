@@ -1,0 +1,97 @@
+.wrap {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.page-not-found {
+  justify-self: center;
+}
+
+.logo {
+  justify-self: right;
+  height: 300px;
+  width: 253px;
+}
+
+.text-section {
+  display: grid;
+  align-content: center;
+  justify-self: left;
+  padding-left: 2rem;
+}
+
+.text-section h2 {
+  text-align: center;
+  font-family: 'Pou';
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 44px;
+  margin-bottom: 10px;
+  color: var(--excel-green);
+  user-select: none;
+}
+
+.error-code {
+  text-align: center;
+  font-family: 'Pou';
+  font-size: 55px;
+  color: rgb(209, 32, 32);
+  margin-bottom: 10px;
+}
+
+.error-code img {
+  transform: translateY(1px);
+  margin: 0px 3px;
+}
+
+.link {
+  justify-content: center;
+}
+
+.link a {
+  font-family: "pou";
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  background-color: var(--excel-green);
+  border: 2px solid transparent;
+  color: #f1f1f1;
+  text-transform: uppercase;
+}
+
+.link a:hover {
+  color: var(--excel-green);
+  border: 2px solid var(--excel-green);
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 900px) {
+  .wrap {
+    padding: 4rem 0;
+  }
+
+  .page-not-found {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 0;
+  }
+
+  .logo {
+    padding-left: 0rem;
+  }
+
+  .text-section {
+    padding-top: 2rem;
+    padding-left: 0;
+  }
+
+  .text-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
