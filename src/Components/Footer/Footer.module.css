@@ -27,7 +27,9 @@
 .newsletter h3 {
   color: white;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin: 7px 0 15px 0;
+  font-family: 'Pou';
+  letter-spacing: 0.6px;
 }
 
 .newsletter input {
@@ -49,6 +51,7 @@
 .newsletter input::placeholder {
   color: var(--excel-dark-green);
   font-weight: bold;
+  font-family: 'Pou';
 }
 
 .error input::placeholder {
@@ -95,8 +98,11 @@
 }
 
 .location p {
-  color: #fff;
+  color: #f1f1f1;
   margin-left: 32px;
+  font-family: 'Pou';
+  letter-spacing: 0.6px;
+  line-height: 22px;
 }
 
 .pin-container {
@@ -118,19 +124,22 @@
 
 .mail a {
   text-decoration: underline;
-  color: #fff;
-}
-
-.link {
-  color: #fff;
-  padding-bottom: 3px;
-  font-size: 20px;
-  width: fit-content;
+  color: #f1f1f1;
+  font-family: 'Pou';
   letter-spacing: 0.5px;
 }
 
+.link {
+  color: #f1f1f1;
+  padding-bottom: 5px;
+  font-size: 20px;
+  width: fit-content;
+  letter-spacing: 0.5px;
+  font-family: 'Pou';
+}
+
 .link svg {
-  transform: translateY(3px);
+  transform: translateY(4px);
 }
 
 .copyright {
@@ -145,8 +154,10 @@
 }
 
 .copyright p {
-  font-size: 16px;
-  color: #fff;
+  font-size: 17px;
+  color: #f1f1f1;
+  font-family: 'Pou';
+  letter-spacing: 0.6px;
 }
 
 .copyright svg {
@@ -156,8 +167,7 @@
 @media screen and (max-width: 900px) {
   .footer {
     background-color: var(--excel-light-green);
-    padding: 2rem 4rem;
-    padding-bottom: 2rem;
+    padding: 2rem 3rem;
   }
 
   .container {
@@ -183,6 +193,11 @@
   .newsletter h3,
   .newsletter h2 {
     text-align: center;
+  }
+
+  .container h2,
+  .newsletter h2 {
+    padding-bottom: 7px;
   }
 
   .newsletter input {

@@ -112,7 +112,7 @@ export default function Footer() {
           }`}
         >
           <h2>Zapisz się do naszego newslettera</h2>
-          <h3>Bądź na bieżąco z aktualizacjami kursu, artykułami, itd.</h3>
+          <h3>Bądź na bieżąco z aktualizacjami kursu.</h3>
           <form onSubmit={newsletterFunction} ref={newsletterRef}>
             <input
               type='email'
@@ -142,7 +142,7 @@ export default function Footer() {
       <div className={styles.copyright}>
         <hr />
         <p>
-          <Copyright size='16px' /> Excel na Wypasie 2023. Wszystkie prawa
+          <Copyright size='16px' /> Excel na Wypasie 2023. Wszelkie prawa
           zastrzeżone.
         </p>
       </div>

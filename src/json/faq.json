@@ -1,26 +1,26 @@
 [
     {
-      "question": "Pytanie numer 1",
+      "question": "Czy jest jakiś określony czas, w jakim muszę go ukończyć?",
       "number": 1,
       "answer":
-        "Odpowiedz nr 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales ornare. "
+        "Rozpoczęcie i ukończenie kursu nie jest w żaden sposób ograniczone czasowo. Dostęp jest dożywotni pod warunkiem, że Twoje konto działa."
     },
     {
-      "question": "Pytanie numer 2",
+      "question": "Czy jest możliwość zwrotu pieniędzy?",
       "number": 2,
       "answer":
-        "Odpowiedz nr 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales ornare. "
+        "Kurs można zwrócić w ciągu 30 dni od ich zakupu. Chyba, że użytkownik pobrał/wykorzystał większość kursu."
     },
     {
-      "question": "Pytanie numer 3",
+      "question": "Czy istnieje wsparcie techniczne lub możliwość uzyskania pomocy w razie problemów z kursem?",
       "number": 3,
       "answer":
-        "Odpowiedz nr 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales ornare. "
+        "Tak, nasz kurs Excel oferuje wsparcie techniczne dostępne 24/7. Jesteśmy tu, aby pomóc Ci rozwiązać wszelkie techniczne problemy, które mogą wystąpić podczas korzystania z kursu."
     },
     {
-      "question": "Pytanie numer 4",
+      "question": "Jakie umiejętności lub wiedzę muszę posiadać, aby rozpocząć ten kurs?",
       "number": 4,
       "answer":
-        "Odpowiedz nr 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sedtincidunt eros, mattis dapibus nulla. Nam luctus augue venenatis metus sodales orare. "
+        "Nasz kurs Excel jest dostosowany do uczestników o różnym poziomie zaawansowania, co oznacza, że jest odpowiedni zarówno dla początkujących, jak i bardziej zaawansowanych użytkowników. "
     }
   ]

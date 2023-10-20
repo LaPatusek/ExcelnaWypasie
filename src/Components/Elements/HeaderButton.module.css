@@ -11,7 +11,7 @@
 }
 
 .c-button--gooey {
-  background-color: var(--white-text);
+  background-color: #ececec;
   color: #a37a5c;
   text-transform: uppercase;
   letter-spacing: 2px;
