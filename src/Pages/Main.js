@@ -1,7 +1,6 @@
 import {
   Crown1,
   Facebook,
-  Instagram,
   MoreSquare,
   Profile,
   VideoHorizontal,
@@ -126,15 +125,6 @@ export default function Main() {
                   aria-label='FaceBook'
                 >
                   <Facebook size='44' color='#fff' />
-                </a>
-                <a
-                  href='https://www.instagram.com/eryk7777/'
-                  target='_blank'
-                  rel='noreferrer'
-                  className={styles.Instagram}
-                  aria-label='Instagram'
-                >
-                  <Instagram size='44' color='#fff' />
                 </a>
                 <a
                   href='https://www.linkedin.com/in/eryk-trojanowski-7678ab120/'
