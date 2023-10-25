@@ -6,15 +6,15 @@ export default function Kursy() {
   return (
     <div className={styles.kurs}>
       <div className={styles['kurs-header']}>
-        <h1>Excel na Wypasie</h1>
-        <h2>
+        <span>Excel na Wypasie</span>
+        <h1>
           Oferujemy szkolenia online <br /> jak i szkolenia stacjonarne{' '}
-        </h2>
+        </h1>
       </div>
 
       <div className={`${styles.container} grid`}>
         <div className={styles['container-text']}>
-          <h3>Szkolenia stacjonarne</h3>
+          <h2>Szkolenia stacjonarne</h2>
           <p>
             Nasze profesjonalne szkolenia prowadzone są przez doświadczonych
             ekspertów, którzy w przystępny sposób przekazują praktyczną wiedzę.
@@ -40,7 +40,7 @@ export default function Kursy() {
           className={styles['second-image']}
         />
         <div className={styles['container-text']}>
-          <h3>Szkolenia online</h3>
+          <h2>Szkolenia online</h2>
           <p>
             Dzięki naszym interaktywnym platformom szkoleniowym, uczestnicy mają
             dostęp do bogatej bazy materiałów edukacyjnych, wideo lekcji oraz

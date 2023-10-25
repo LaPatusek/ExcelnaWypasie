@@ -15,10 +15,10 @@ export default function Oferta() {
   return (
     <div className={styles.oferta}>
       <div className={styles['oferta-header']}>
-        <h1>Excel na Wypasie</h1>
-        <h2>
+        <span>Excel na Wypasie</span>
+        <h1>
           Dołącz do nas i naucz się programu Excel <br /> w ekspresowym tempie!
-        </h2>
+        </h1>
       </div>
 
       <div className={styles['flipped-wave-first']}>

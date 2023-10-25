@@ -4,7 +4,7 @@
   background-color: var(--excel-light-green);
 }
 
-.oferta-header h1 {
+.oferta-header span {
   padding-top: 2.5rem;
   font-family: 'Pou';
   font-size: 66px;
@@ -15,7 +15,7 @@
   color: #f1f1f1;
 }
 
-.oferta-header h2 {
+.oferta-header h1 {
   font-size: 34px;
   width: 70%;
   margin: 0 auto;
