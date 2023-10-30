@@ -1,4 +1,4 @@
-import { Calendar1, CalendarAdd, Clock, People } from 'iconsax-react';
+import { ArrowUp2, Calendar1, CalendarAdd, Clock, People } from 'iconsax-react';
 import { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import instructor from '../Components/Assets/Eryk.webp';
@@ -7,9 +7,24 @@ import styles from './Oferta.module.css';
 
 export default function Oferta() {
   const [bonusOffers, setBonusOffers] = useState(false);
+  const [firstLevelState, setFirstLevelState] = useState(false);
+  const [secondLevelState, setSecondLevelState] = useState(false);
+  const [thirdLevelState, setThirdLevelState] = useState(false);
 
   const offerFunction = () => {
     setBonusOffers((s) => !s);
+  };
+
+  const FirstLevelFunction = () => {
+    setFirstLevelState((s) => !s);
+  };
+
+  const SecondLevelFunction = () => {
+    setSecondLevelState((s) => !s);
+  };
+
+  const ThirdLevelFunction = () => {
+    setThirdLevelState((s) => !s);
   };
 
   return (
@@ -150,7 +165,7 @@ export default function Oferta() {
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Praca grupowa - komentowanie
+                      Praca grupowa - komentowanie.
                     </li>
                     <li>
                       <i aria-hidden='true'>
@@ -268,7 +283,7 @@ export default function Oferta() {
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Funkcja WYSZUKAJ.PIONOWO
+                  Funkcja WYSZUKAJ.PIONOWO.
                 </li>
                 {bonusOffers && (
                   <Fragment>
@@ -288,7 +303,7 @@ export default function Oferta() {
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Fukcje daty i czasu
+                      Fukcje daty i czasu.
                     </li>
                     <li>
                       <i aria-hidden='true'>
@@ -319,7 +334,7 @@ export default function Oferta() {
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Formatowanie warunkowe
+                      Formatowanie warunkowe.
                     </li>
                   </Fragment>
                 )}
@@ -349,19 +364,19 @@ export default function Oferta() {
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Operacje statystyczne
+                  Operacje statystyczne.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Funckje finansowe
+                  Funckje finansowe.
                 </li>
                 <li>
                   <i aria-hidden='true'>
                     <Tick />
                   </i>
-                  Import / eksport danych do CSV, PDF
+                  Import / eksport danych do CSV, PDF.
                 </li>
                 <li>
                   <i aria-hidden='true'>
@@ -408,7 +423,7 @@ export default function Oferta() {
                       <i aria-hidden='true'>
                         <Tick />
                       </i>
-                      Analiza danych
+                      Analiza danych.
                     </li>
                   </Fragment>
                 )}
@@ -463,115 +478,153 @@ export default function Oferta() {
 
       <div className={styles.preview}>
         <h3>Program kursu</h3>
-        <div className={styles.program}>
-          <h4 className={styles['brown-program--header']}>Początek</h4>
+        <div className={`${styles.program}`}>
+          <h4 className={styles['brown-program--header']}>Wprowadzenie</h4>
           <ol className={styles['brown-program']}>
             <li>
-              <Link to='/excel-course/program/witaj'>
+              <Link to='/'>
                 <span>Witaj!</span>
                 <div className={styles['li-button']}>Zobacz</div>
               </Link>
             </li>
             <li>
-              <Link to='/excel-course/program/witaj'>
+              <Link to='/'>
                 <span>Witaj!</span>
                 <div className={styles['li-button']}>Zobacz</div>
               </Link>
             </li>
             <li>
-              <Link to='/excel-course/program/witaj'>
+              <Link to='/'>
                 <span>Witaj!</span>
                 <div className={styles['li-button']}>Zobacz</div>
               </Link>
             </li>
           </ol>
 
-          <h4 className={styles['brown-program--header']}>Poziom 1</h4>
-          <ol className={styles['brown-program']}>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
-                  pasek formuł.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-          </ol>
+          <h4
+            className={`${styles['brown-program--header']} ${
+              firstLevelState ? styles['active-arrow'] : ''
+            } pointer`}
+            onClick={FirstLevelFunction}
+          >
+            Poziom 1
+            <ArrowUp2 size={'20'} variant='Bold' />
+          </h4>
+          {firstLevelState && (
+            <ol
+              className={`${styles['brown-program']} ${styles['padding-levels']}`}
+            >
+              <li>Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.</li>
+              <li>
+                Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
+                pasek formuł.
+              </li>
+              <li>
+                Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
+              </li>
+              <li>Tworzenie i zarządzanie arkuszami.</li>
+              <li>
+                Formatowanie komórek: czcionka, kolor, pogrubienie, kursywa itp.
+              </li>
+              <li>Używanie operacji matematycznych w formułach.</li>
+              <li>Praca grupowa - komentowanie.</li>
+              <li>
+                Wprowadzenie do funkcji i formuł: składnia i zastosowanie na
+                prostych przykładach.
+              </li>
+              <li>
+                Kopiowanie, wycinanie, wklejanie danych oraz korzystanie z opcji
+                wklejania specjalnego.
+              </li>
+              <li>
+                Używanie podstawowych funkcji wbudowanych: SUMA, ŚREDNIA, MAX,
+                MIN.
+              </li>
+              <li>
+                Wprowadzanie i formatowanie danych: tekst, liczby, daty, waluty.
+              </li>
+              <li>Tworzenie i formatowanie tabel danych.</li>
+              <li>Automatyczne uzupełnianie danych.</li>
+              <li>Autouzupełnianie, adresowanie względne.</li>
+              <li>Sortowanie danych: rosnąco, malejąco.</li>
+              <li>Filtorwanie danych oraz filtrowanie wielopoziomowe.</li>
+            </ol>
+          )}
 
-          <h4 className={styles['green-program--header']}>Poziom 2</h4>
-          <ol className={styles['green-program']}>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
-                  pasek formuł.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-          </ol>
+          <h4
+            className={`${styles['green-program--header']} ${
+              secondLevelState ? styles['active-arrow'] : ''
+            } pointer`}
+            onClick={SecondLevelFunction}
+          >
+            Poziom 2
+            <ArrowUp2 size={'20'} variant='Bold' />
+          </h4>
+          {secondLevelState && (
+            <ol
+              className={`${styles['green-program']}  ${styles['padding-levels']}`}
+            >
+              <li>Adresowanie bezwzględne oraz mieszane.</li>
+              <li>
+                Operacje na tekście, zmiana wielkości liter, łączenie oraz
+                wyciąganie znaków.
+              </li>
+              <li>Funkcje logiczne: JEŻELI, WIELR, ORAZ, LUB, NIE.</li>
+              <li>Funkcje łączące tekst, odczytujące określone fragmenty.</li>
+              <li>
+                Grupowanie, filtrowanie i ukrywanie danych w tabelach
+                przestawnych.
+              </li>
+              <li>Funkcja WYSZUKAJ.PIONOWO.</li>
+              <li>Funkcje warunkowe LICZ.JEŻELI, ILE.NIEPUSTYCH.</li>
+              <li>Tworzenie i zarządzanie tabelami przestawnymi.</li>
+              <li>Fukcje daty i czasu.</li>
+              <li>Tworzenie interaktywnych formularzy za pomocą kontrolek.</li>
+              <li>
+                Zabezpieczanie komórek przed edycją: blokowanie i
+                odblokowywanie.
+              </li>
+              <li>Ustalanie haseł dla plików i arkuszy.</li>
+              <li>Wprowadzenie do systemu wizualizacji danych - wykresy.</li>
+              <li>Formatowanie warunkowe.</li>
+            </ol>
+          )}
 
-          <h4 className={styles['blue-program--header']}>Poziom 3</h4>
-          <ol className={styles['blue-program']}>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Wprowadzenie do arkuszy kalkulacyjnych i funkcji Excela.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Omówienie interfejsu użytkownika: wstążka, komórki, arkusze,
-                  pasek formuł.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-            <li>
-              <Link to='/excel-course/program/witaj'>
-                <span>
-                  Tworzenie nowego pliku, zapisywanie i otwieranie istniejącego.
-                </span>
-                <div className={styles['li-button']}>Start</div>
-              </Link>
-            </li>
-          </ol>
+          <h4
+            className={`${styles['blue-program--header']} ${
+              thirdLevelState ? styles['active-arrow'] : ''
+            } pointer`}
+            onClick={ThirdLevelFunction}
+          >
+            Poziom 3
+            <ArrowUp2 size={'20'} variant='Bold' />
+          </h4>
+          {thirdLevelState && (
+            <ol
+              className={`${styles['blue-program']}  ${styles['padding-levels']}`}
+            >
+              <li>Operacje statystyczne.</li>
+              <li>Funckje finansowe.</li>
+              <li>Import / eksport danych do CSV, PDF.</li>
+              <li>
+                Tworzenie interaktywnych dashboardów: łączenie różnych arkuszy i
+                wykresów.
+              </li>
+              <li>Wprowadzenie do makr: nagrywanie i edycja makr.</li>
+              <li>
+                Wprowadzenie do języka VBA: edytor VBA, zmienne, pętle,
+                instrukcje warunkowe.
+              </li>
+              <li>
+                Udostępnianie plików online za pomocą platformy chmurowej.
+              </li>
+              <li>
+                Tworzenie scenariuszy w oparciu o różne warianty kalkulacji.
+              </li>
+              <li>Generowanie raportów.</li>
+              <li>Analiza danych.</li>
+            </ol>
+          )}
         </div>
       </div>
 
@@ -588,10 +641,11 @@ export default function Oferta() {
             <h5>Eryk Trojanowski</h5>
           </div>
           <p>
-            Przez ponad <span className={styles.highlight}> dekadę </span> nieprzerwanie dostarcza wysokiej jakości
-            szkolenia i wsparcie dla szerokiej gamy klientów. Jego pasja do
-            nauczania oraz umiejętność przekazywania wiedzy uczyniły go jednym z
-            najbardziej poszukiwanych ekspertów w swojej dziedzinie.
+            Przez ponad <span className={styles.highlight}> dekadę </span>{' '}
+            nieprzerwanie dostarcza wysokiej jakości szkolenia i wsparcie dla
+            szerokiej gamy klientów. Jego pasja do nauczania oraz umiejętność
+            przekazywania wiedzy uczyniły go jednym z najbardziej poszukiwanych
+            ekspertów w swojej dziedzinie.
           </p>
         </div>
       </div>

@@ -44,3 +44,7 @@ code {
 .active {
   color: #fff !important;
 }
+
+.pointer {
+  cursor: pointer;
+}
