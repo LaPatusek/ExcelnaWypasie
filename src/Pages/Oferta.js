@@ -233,9 +233,9 @@ export default function Oferta() {
               )}
             </div>
             <h5>Cena zł</h5>
-            <button className={styles['buy-button']}>
-              <Link to='/soon'>Rozpocznij już teraz</Link>
-            </button>
+            <Link to='/soon' className={styles['buy-button--link']}>
+              <button>Rozpocznij już teraz</button>
+            </Link>
           </div>
 
           <div className={`${styles['oferta-container']} ${styles.green}`}>
@@ -346,9 +346,9 @@ export default function Oferta() {
 
             <div className={styles['start-container']}>
               <h5>Cena zł</h5>
-              <button className={styles['buy-button']}>
-                <Link to='/soon'>Rozpocznij już teraz</Link>
-              </button>
+              <Link to='/soon' className={styles['buy-button--link']}>
+                <button>Rozpocznij już teraz</button>
+              </Link>
             </div>
           </div>
 
@@ -434,9 +434,9 @@ export default function Oferta() {
             </div>
             <div className={styles['start-container']}>
               <h5>Cena zł</h5>
-              <button className={styles['buy-button']}>
-                <Link to='/soon'>Rozpocznij już teraz</Link>
-              </button>
+              <Link to='/soon' className={styles['buy-button--link']}>
+                <button>Rozpocznij już teraz</button>
+              </Link>
             </div>
           </div>
         </div>

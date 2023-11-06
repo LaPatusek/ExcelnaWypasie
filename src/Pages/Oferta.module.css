@@ -270,7 +270,15 @@
   font-family: 'Pou';
 }
 
-.buy-button {
+.buy-button--link {
+  font-family: 'Pou';
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.buy-button--link button {
   display: block;
   background-color: var(--white-text);
   width: 80%;
@@ -281,16 +289,8 @@
   transition: all 0.4s;
 }
 
-.buy-button:hover {
+.buy-button--link button:hover {
   filter: brightness(1.1);
-}
-
-.buy-button a {
-  font-family: 'Pou';
-  letter-spacing: 0.5px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #1a1a1a;
 }
 
 .wave-spacer-flipped {
