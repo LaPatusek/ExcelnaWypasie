@@ -1,5 +1,5 @@
-import szkolenieOnline from '../Components/Assets/CourseOnline.webp';
-import szkolenieStacjonarne from '../Components/Assets/Stacjonarny.webp';
+import szkolenieOnline from '../Assets/CourseOnline.webp';
+import szkolenieStacjonarne from '../Assets/Stacjonarny.webp';
 import styles from './Kursy.module.css';
 
 export default function Kursy() {

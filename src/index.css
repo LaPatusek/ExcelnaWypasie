@@ -29,7 +29,7 @@ code {
   font-family: 'Pou';
   font-style: normal;
   font-weight: 400;
-  src: url(./Components/Assets/Qatar2022-Medium.otf) format('truetype');
+  src: url(./Assets/Qatar2022-Medium.otf) format('truetype');
   font-display: swap;
 }
 

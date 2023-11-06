@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { ArrowRight2, Heart } from 'iconsax-react';
 import { useEffect, useRef, useState } from 'react';
-import meeting from '../Components/Assets/meeting.webp';
+import meeting from '../Assets/meeting.webp';
 import useInput from '../Components/hooks/useInput';
 import faq from '../json/faq.json';
 import styles from './About.module.css';

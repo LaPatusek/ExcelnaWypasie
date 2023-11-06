@@ -1,7 +1,7 @@
 import { ArrowUp2, Calendar1, CalendarAdd, Clock, People } from 'iconsax-react';
 import { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
-import instructor from '../Components/Assets/Eryk.webp';
+import instructor from '../Assets/Eryk.webp';
 import Tick from '../Components/Elements/Tick';
 import styles from './Oferta.module.css';
 

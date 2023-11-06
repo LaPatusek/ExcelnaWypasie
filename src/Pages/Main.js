@@ -7,7 +7,7 @@ import {
 } from 'iconsax-react';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import instruktor from '../Components/Assets/Eryk.webp';
+import instruktor from '../Assets/Eryk.webp';
 import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
 

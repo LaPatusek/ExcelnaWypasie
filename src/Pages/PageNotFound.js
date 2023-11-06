@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import cowColors from '../Components/Assets/cow-colors.webp';
-import logo from '../Components/Assets/excel_logo_png.webp';
+import cowColors from '../Assets/cow-colors.webp';
+import logo from '../Assets/excel_logo_png.webp';
 import styles from './PageNotFound.module.css';
 
 export default function PageNotFound() {
