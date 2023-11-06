@@ -234,7 +234,7 @@ export default function Oferta() {
             </div>
             <h5>Cena zł</h5>
             <button className={styles['buy-button']}>
-              <Link to='/excel-course'>Rozpocznij już teraz</Link>
+              <Link to='/soon'>Rozpocznij już teraz</Link>
             </button>
           </div>
 
@@ -347,7 +347,7 @@ export default function Oferta() {
             <div className={styles['start-container']}>
               <h5>Cena zł</h5>
               <button className={styles['buy-button']}>
-                <Link to='/excel-course'>Rozpocznij już teraz</Link>
+                <Link to='/soon'>Rozpocznij już teraz</Link>
               </button>
             </div>
           </div>
@@ -435,7 +435,7 @@ export default function Oferta() {
             <div className={styles['start-container']}>
               <h5>Cena zł</h5>
               <button className={styles['buy-button']}>
-                <Link to='/excel-course'>Rozpocznij już teraz</Link>
+                <Link to='/soon'>Rozpocznij już teraz</Link>
               </button>
             </div>
           </div>
@@ -482,19 +482,19 @@ export default function Oferta() {
           <h4 className={styles['brown-program--header']}>Wprowadzenie</h4>
           <ol className={styles['brown-program']}>
             <li>
-              <Link to='/'>
+              <Link to='/soon'>
                 <span>Witaj!</span>
                 <div className={styles['li-button']}>Zobacz</div>
               </Link>
             </li>
             <li>
-              <Link to='/'>
+              <Link to='/soon'>
                 <span>Witaj!</span>
                 <div className={styles['li-button']}>Zobacz</div>
               </Link>
             </li>
             <li>
-              <Link to='/'>
+              <Link to='/soon'>
                 <span>Witaj!</span>
                 <div className={styles['li-button']}>Zobacz</div>
               </Link>

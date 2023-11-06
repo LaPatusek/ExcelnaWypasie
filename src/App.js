@@ -10,6 +10,7 @@ import Kursy from './Pages/Kursy';
 import Main from './Pages/Main';
 import Oferta from './Pages/Oferta';
 import PageNotFound from './Pages/PageNotFound';
+import Soon from './Pages/Soon';
 
 const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
 
@@ -51,6 +52,7 @@ function App() {
           <Route path='/kursy' element={<Kursy />} />
           <Route path='/kontakt' element={<Kontakt />} />
           <Route path='/oferta' element={<Oferta />} />
+          <Route path='/soon' element={<Soon />} />
           <Route path='*' element={<PageNotFound />} />
         </Routes>
       </main>
