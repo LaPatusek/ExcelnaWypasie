@@ -1,13 +1,21 @@
 import emailjs from '@emailjs/browser';
 import { ArrowRight3, Copyright, Heart, Location } from 'iconsax-react';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import useInput from '../hooks/useInput';
+import useInput from '../hooks/useInput.tsx';
 import styles from './Footer.module.css';
 
-export default function Footer() {
+declare var process: {
+  env: {
+    REACT_APP_SMTP_ID: string;
+    REACT_APP_NEWS_ID: string;
+    REACT_APP_PUBLIC_KEY: string;
+  };
+};
+
+const Footer: React.FC = () => {
   const [formSent, setFormSent] = useState(false);
-  const newsletterRef = useRef();
+  const newsletterRef = useRef(null);
 
   const {
     value: enteredNews,
@@ -16,9 +24,11 @@ export default function Footer() {
     inputBlurHandler: newsBlurHandler,
     hasError: newsHasError,
     reset: newsReset,
-  } = useInput((value) => value.trim().includes('@'));
+  } = useInput({
+    validateValue: (value: string) => value.trim().includes('@'),
+  });
 
-  const newsletterFunction = (e) => {
+  const newsletterFunction = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!newsIsValid) {
@@ -29,7 +39,7 @@ export default function Footer() {
       .sendForm(
         process.env.REACT_APP_SMTP_ID,
         process.env.REACT_APP_NEWS_ID,
-        newsletterRef.current,
+        newsletterRef.current!,
         process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
@@ -148,4 +158,6 @@ export default function Footer() {
       </div>
     </div>
   );
-}
+};
+
+export default Footer;

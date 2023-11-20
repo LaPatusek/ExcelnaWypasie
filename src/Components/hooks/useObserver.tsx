@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const useObserver = (obsRef) => {
+const useObserver = (obsRef: React.RefObject<HTMLDivElement>) => {
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {
@@ -8,7 +8,7 @@ const useObserver = (obsRef) => {
       setIntersecting(entry.isIntersecting),
     );
 
-    observer.observe(obsRef.current);
+    observer.observe(obsRef.current!);
     return () => {
       observer.disconnect();
     };

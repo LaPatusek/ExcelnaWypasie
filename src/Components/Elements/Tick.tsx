@@ -1,4 +1,6 @@
-export default function Tick() {
+import React from 'react';
+
+const Tick: React.FC = () => {
   return (
     <svg
       width='10'
@@ -17,4 +19,6 @@ export default function Tick() {
       ></path>
     </svg>
   );
-}
+};
+
+export default Tick;

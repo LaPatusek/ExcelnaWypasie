@@ -1,9 +1,10 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import cowColors from '../Assets/cow-colors.webp';
 import logo from '../Assets/excel_logo_png.webp';
 import styles from './PageNotFound.module.css';
 
-export default function PageNotFound() {
+const PageNotFound: React.FC = () => {
   return (
     <div className={`${styles.wrap} grid`}>
       <div className={`${styles['page-not-found']} flex`}>
@@ -29,4 +30,6 @@ export default function PageNotFound() {
       </div>
     </div>
   );
-}
+};
+
+export default PageNotFound;

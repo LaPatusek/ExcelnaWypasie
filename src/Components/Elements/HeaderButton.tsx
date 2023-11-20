@@ -1,6 +1,7 @@
+import React from 'react';
 import styles from './HeaderButton.module.css';
 
-export default function HeaderButton() {
+const HeaderButton: React.FC = () => {
   return (
     <div className={styles.button}>
       <button className={`${styles['c-button']} ${styles['c-button--gooey']}`}>
@@ -31,4 +32,6 @@ export default function HeaderButton() {
       </svg>
     </div>
   );
-}
+};
+
+export default HeaderButton;

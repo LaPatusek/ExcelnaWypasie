@@ -1,7 +1,8 @@
+import React from 'react';
 import pastwisko from '../Assets/cow-pasture.webp';
 import styles from './Soon.module.css';
 
-export default function Soon() {
+const Soon: React.FC = () => {
   return (
     <div className={styles.projekty}>
       <img
@@ -13,4 +14,6 @@ export default function Soon() {
       <h2>Już wkrótce</h2>
     </div>
   );
-}
+};
+
+export default Soon;

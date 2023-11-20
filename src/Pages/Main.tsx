@@ -5,13 +5,13 @@ import {
   Profile,
   VideoHorizontal,
 } from 'iconsax-react';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import instruktor from '../Assets/Eryk.webp';
-import Header from '../Components/Header/Header';
+import Header from '../Components/Header/Header.tsx';
 import styles from './Main.module.css';
 
-export default function Main() {
+const Main: React.FC = () => {
   return (
     <Fragment>
       <Header />
@@ -165,4 +165,6 @@ export default function Main() {
       </svg>
     </Fragment>
   );
-}
+};
+
+export default Main;

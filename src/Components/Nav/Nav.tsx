@@ -1,10 +1,10 @@
 import { HambergerMenu } from 'iconsax-react';
-import { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../Assets/excel_logo_png.webp';
 import styles from './Nav.module.css';
 
-export default function Nav() {
+const Nav: React.FC = () => {
   const [menuState, setMenuState] = useState(false);
 
   const menuHandler = () => {
@@ -111,4 +111,6 @@ export default function Nav() {
       </div>
     </Fragment>
   );
-}
+};
+
+export default Nav;

@@ -1,22 +1,27 @@
-import { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import ReactGA from 'react-ga4';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Cookies from './Components/Cookies/Cookies';
-import Footer from './Components/Footer/Footer';
-import Nav from './Components/Nav/Nav';
-import About from './Pages/About';
-import Kontakt from './Pages/Kontakt';
-import Kursy from './Pages/Kursy';
-import Main from './Pages/Main';
-import Oferta from './Pages/Oferta';
-import PageNotFound from './Pages/PageNotFound';
-import Soon from './Pages/Soon';
+import Footer from './Components/Footer/Footer.tsx';
+import Nav from './Components/Nav/Nav.tsx';
+import About from './Pages/About.tsx';
+import Kontakt from './Pages/Kontakt.tsx';
+import Kursy from './Pages/Kursy.tsx';
+import Main from './Pages/Main.tsx';
+import Oferta from './Pages/Oferta.tsx';
+import PageNotFound from './Pages/PageNotFound.tsx';
+import Soon from './Pages/Soon.tsx';
+
+declare var process: {
+  env: {
+    REACT_APP_TRACKING_ID: string;
+  };
+};
 
 const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
 
 ReactGA.initialize(TRACKING_ID);
 
-function App() {
+const App: React.FC = () => {
   const { pathname, hash, key } = useLocation();
 
   useEffect(() => {
@@ -60,9 +65,8 @@ function App() {
       <footer>
         <Footer />
       </footer>
-      <Cookies />
     </Fragment>
   );
-}
+};
 
 export default App;

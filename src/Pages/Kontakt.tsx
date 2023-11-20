@@ -1,12 +1,20 @@
 import emailjs from '@emailjs/browser';
 import { Call, Location, TickCircle } from 'iconsax-react';
-import { Fragment, useRef, useState } from 'react';
-import useInput from '../Components/hooks/useInput';
+import React, { Fragment, useRef, useState } from 'react';
+import useInput from '../Components/hooks/useInput.tsx';
 import styles from './Kontakt.module.css';
 
-const Kontakt = () => {
-  const [formIsSent, setFormIsSent] = useState(false);
-  const formRef = useRef();
+declare var process: {
+  env: {
+    REACT_APP_SMTP_ID: string;
+    REACT_APP_TEMPLATE_ID: string;
+    REACT_APP_PUBLIC_KEY: string;
+  };
+};
+
+const Kontakt: React.FC = () => {
+  const [formIsSent, setFormIsSent] = useState<boolean>(false);
+  const formRef = useRef(null);
 
   const {
     value: enteredName,
@@ -15,7 +23,9 @@ const Kontakt = () => {
     inputBlurHandler: nameBlurHandler,
     hasError: nameHasError,
     reset: nameReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   const {
     value: enteredTopic,
@@ -24,7 +34,9 @@ const Kontakt = () => {
     inputBlurHandler: topicBlurHandler,
     hasError: topicHasError,
     reset: topicReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   const {
     value: enteredMail,
@@ -33,7 +45,9 @@ const Kontakt = () => {
     inputBlurHandler: mailBlurHandler,
     hasError: mailHasError,
     reset: mailReset,
-  } = useInput((value) => value.trim().includes('@'));
+  } = useInput({
+    validateValue: (value: string) => value.trim().includes('@'),
+  });
 
   const {
     value: enteredMessage,
@@ -42,7 +56,9 @@ const Kontakt = () => {
     inputBlurHandler: messageBlurHandler,
     hasError: messageHasError,
     reset: messageReset,
-  } = useInput((value) => value.trim() !== '');
+  } = useInput({
+    validateValue: (value: string) => value.trim() !== '',
+  });
 
   let formIsValid = false;
 
@@ -50,7 +66,7 @@ const Kontakt = () => {
     formIsValid = true;
   }
 
-  const formHandler = (e) => {
+  const formHandler = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!formIsValid) {
@@ -61,7 +77,7 @@ const Kontakt = () => {
       .sendForm(
         process.env.REACT_APP_SMTP_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        formRef.current,
+        formRef.current!,
         process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
@@ -80,7 +96,7 @@ const Kontakt = () => {
     messageReset();
   };
 
-  const resetHandler = (e) => {
+  const resetHandler = (e: React.FormEvent) => {
     e.preventDefault();
 
     nameReset();
@@ -160,7 +176,7 @@ const Kontakt = () => {
           <form onSubmit={formHandler} ref={formRef}>
             <div className={styles.group}>
               <input
-                required='Imie i nazwisko'
+                required
                 type='text'
                 name='user_name'
                 id='name'
@@ -177,7 +193,7 @@ const Kontakt = () => {
 
             <div className={styles.group}>
               <input
-                required='Temat'
+                required
                 id='topic'
                 name='user_topic'
                 type='text'
@@ -194,7 +210,7 @@ const Kontakt = () => {
 
             <div className={styles.group}>
               <input
-                required='Adres email'
+                required
                 id='mail'
                 name='user_email'
                 value={enteredMail}
@@ -211,13 +227,13 @@ const Kontakt = () => {
 
             <div className={styles.group}>
               <textarea
-                required='Twoja wiadomość'
+                required
                 id='message'
                 name='message'
                 value={enteredMessage}
                 autoComplete='false'
+                rows={6}
                 className={styles.input}
-                rows='6'
                 onChange={messageChangeHandler}
                 onBlur={messageBlurHandler}
               />

@@ -1,15 +1,23 @@
 import emailjs from '@emailjs/browser';
 import { ArrowRight2, Heart } from 'iconsax-react';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import meeting from '../Assets/meeting.webp';
-import useInput from '../Components/hooks/useInput';
+import useInput from '../Components/hooks/useInput.tsx';
 import faq from '../json/faq.json';
 import styles from './About.module.css';
 
-export default function About() {
-  const [activeBlock, setActiveBlock] = useState([]);
-  const [formSent, setFormSent] = useState(false);
-  const newsletterRef = useRef();
+declare var process: {
+  env: {
+    REACT_APP_SMTP_ID: string;
+    REACT_APP_TEMPLATE_ID: string;
+    REACT_APP_PUBLIC_KEY: string;
+  };
+};
+
+const About: React.FC = () => {
+  const [activeBlock, setActiveBlock] = useState<number[]>([]);
+  const [formSent, setFormSent] = useState<boolean>(false);
+  const newsletterRef = useRef(null);
 
   const {
     value: enteredNews,
@@ -18,9 +26,11 @@ export default function About() {
     inputBlurHandler: newsBlurHandler,
     hasError: newsHasError,
     reset: newsReset,
-  } = useInput((value) => value.trim().includes('@'));
+  } = useInput({
+    validateValue: (value: string) => value.trim().includes('@'),
+  });
 
-  const newsletterFunction = (e) => {
+  const newsletterFunction = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!newsIsValid) {
@@ -31,7 +41,7 @@ export default function About() {
       .sendForm(
         process.env.REACT_APP_SMTP_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        newsletterRef.current,
+        newsletterRef.current!,
         process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
@@ -53,8 +63,8 @@ export default function About() {
     }, 15000);
   }, [formSent]);
 
-  const questionFunction = (index) => {
-    setActiveBlock((prevBlocks) => {
+  const questionFunction = (index: number) => {
+    setActiveBlock((prevBlocks: number[]) => {
       if (prevBlocks.includes(index)) {
         return prevBlocks.filter((block) => block !== index);
       } else {
@@ -72,7 +82,7 @@ export default function About() {
             Razem możemy <br /> więcej!
           </h1>
 
-          <h2>
+          <p>
             Mamy wieloletnie doświadczenie w prowadzeniu szkoleń stacjonarnych,
             ale teraz skupiamy się na dostarczaniu najwyższej jakości nauki z
             zakresu Excela. Dzięki naszej wiedzy i profesjonalizmowi, nasi
@@ -81,7 +91,7 @@ export default function About() {
             swojego tempa i harmonogramu. Jeśli szukasz pewnego wyboru dla
             siebie lub swoich kolegów, którzy chcą rozwijać swoją wiedzę z
             Excela, to "Excel na Wypasie" to odpowiedni wybór.
-          </h2>
+          </p>
         </div>
         <img
           src={meeting}
@@ -175,4 +185,6 @@ export default function About() {
       </div>
     </div>
   );
-}
+};
+
+export default About;

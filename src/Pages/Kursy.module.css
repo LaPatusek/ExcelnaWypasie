@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.kurs-header span {
+.kurs-header h1 {
   font-size: 70px;
   padding-top: 2.5rem;
   font-family: 'Pou';
@@ -14,7 +14,7 @@
   color: var(--excel-green);
 }
 
-.kurs-header h1 {
+.kurs-header h2 {
   font-size: 36px;
   width: 70%;
   margin: 0 auto;
@@ -42,7 +42,7 @@
   height: auto;
 }
 
-.container-text h2 {
+.container-text h3 {
   text-align: center;
   font-family: 'Pou';
   font-weight: bold;
@@ -104,7 +104,7 @@
     margin-bottom: 4rem;
   }
 
-  .kurs-header h2 {
+  .kurs-header h3 {
     width: 90%;
   }
 

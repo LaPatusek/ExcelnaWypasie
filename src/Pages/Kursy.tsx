@@ -1,20 +1,21 @@
+import React from 'react';
 import szkolenieOnline from '../Assets/CourseOnline.webp';
 import szkolenieStacjonarne from '../Assets/Stacjonarny.webp';
 import styles from './Kursy.module.css';
 
-export default function Kursy() {
+const Kursy: React.FC = () => {
   return (
     <div className={styles.kurs}>
       <div className={styles['kurs-header']}>
-        <span>Excel na Wypasie</span>
-        <h1>
+        <h1>Excel na Wypasie</h1>
+        <h2>
           Oferujemy szkolenia online <br /> jak i szkolenia stacjonarne{' '}
-        </h1>
+        </h2>
       </div>
 
       <div className={`${styles.container} grid`}>
         <div className={styles['container-text']}>
-          <h2>Szkolenia stacjonarne</h2>
+          <h3>Szkolenia stacjonarne</h3>
           <p>
             Nasze profesjonalne szkolenia prowadzone są przez doświadczonych
             ekspertów, którzy w przystępny sposób przekazują praktyczną wiedzę.
@@ -40,7 +41,7 @@ export default function Kursy() {
           className={styles['second-image']}
         />
         <div className={styles['container-text']}>
-          <h2>Szkolenia online</h2>
+          <h3>Szkolenia online</h3>
           <p>
             Dzięki naszym interaktywnym platformom szkoleniowym, uczestnicy mają
             dostęp do bogatej bazy materiałów edukacyjnych, wideo lekcji oraz
@@ -69,4 +70,6 @@ export default function Kursy() {
       </div>
     </div>
   );
-}
+};
+
+export default Kursy;

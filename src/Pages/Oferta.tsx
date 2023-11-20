@@ -1,15 +1,15 @@
 import { ArrowUp2, Calendar1, CalendarAdd, Clock, People } from 'iconsax-react';
-import { Fragment, useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import instructor from '../Assets/Eryk.webp';
-import Tick from '../Components/Elements/Tick';
+import Tick from '../Components/Elements/Tick.tsx';
 import styles from './Oferta.module.css';
 
-export default function Oferta() {
-  const [bonusOffers, setBonusOffers] = useState(false);
-  const [firstLevelState, setFirstLevelState] = useState(false);
-  const [secondLevelState, setSecondLevelState] = useState(false);
-  const [thirdLevelState, setThirdLevelState] = useState(false);
+const Oferta = () => {
+  const [bonusOffers, setBonusOffers] = useState<boolean>(false);
+  const [firstLevelState, setFirstLevelState] = useState<boolean>(false);
+  const [secondLevelState, setSecondLevelState] = useState<boolean>(false);
+  const [thirdLevelState, setThirdLevelState] = useState<boolean>(false);
 
   const offerFunction = () => {
     setBonusOffers((s) => !s);
@@ -651,4 +651,6 @@ export default function Oferta() {
       </div>
     </div>
   );
-}
+};
+
+export default Oferta;

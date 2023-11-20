@@ -1,11 +1,11 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import HeaderButton from '../Elements/HeaderButton';
-import useObserver from '../hooks/useObserver';
+import HeaderButton from '../Elements/HeaderButton.tsx';
+import useObserver from '../hooks/useObserver.tsx';
 import styles from './Header.module.css';
 
-export default function Header() {
-  const expRef = useRef();
+const Header: React.FC = () => {
+  const expRef = useRef<HTMLDivElement>(null);
   const isVisible = useObserver(expRef);
 
   return (
@@ -53,4 +53,6 @@ export default function Header() {
       </div>
     </div>
   );
-}
+};
+
+export default Header;

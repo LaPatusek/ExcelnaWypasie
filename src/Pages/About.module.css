@@ -21,7 +21,7 @@
   color: var(--excel-text-green);
 }
 
-.about-header h2 {
+.about-header p {
   padding: 1.5rem;
   width: 700px;
   font-size: 28px;
@@ -219,7 +219,7 @@
     column-gap: 0;
   }
 
-  .about-header h2 {
+  .about-header p {
     width: 90%;
     padding: 0;
   }
