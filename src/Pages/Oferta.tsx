@@ -232,8 +232,8 @@ const Oferta = () => {
                 <button onClick={offerFunction}>Zobacz pełną ofertę</button>
               )}
             </div>
-            <h5>Cena zł</h5>
-            <Link to='/soon' className={styles['buy-button--link']}>
+            <h5>990 zł</h5>
+            <Link to='/kontakt' className={styles['buy-button--link']}>
               <button>Rozpocznij już teraz</button>
             </Link>
           </div>
@@ -345,8 +345,8 @@ const Oferta = () => {
             </div>
 
             <div className={styles['start-container']}>
-              <h5>Cena zł</h5>
-              <Link to='/soon' className={styles['buy-button--link']}>
+              <h5>1200 zł</h5>
+              <Link to='/kontakt' className={styles['buy-button--link']}>
                 <button>Rozpocznij już teraz</button>
               </Link>
             </div>
@@ -433,8 +433,8 @@ const Oferta = () => {
               )}
             </div>
             <div className={styles['start-container']}>
-              <h5>Cena zł</h5>
-              <Link to='/soon' className={styles['buy-button--link']}>
+              <h5>1700 zł</h5>
+              <Link to='/kontakt' className={styles['buy-button--link']}>
                 <button>Rozpocznij już teraz</button>
               </Link>
             </div>
